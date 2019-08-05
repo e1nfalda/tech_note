@@ -1,0 +1,51 @@
+## css
+### 概述
+
+```Inline``` ```block``` ```b3inline```
+
+```css```目前有css和css3两个版本。css3增加定义了animation,边框radius、图片边框、background-size、background-origin、backgroup-clip、background-size。2D,3D转换，多列、用户界面。
+
+```
+css3兼容额外的前缀。
+-moz-： firefox兼容编织
+-webkit-： chrome、safari
+-o-： opera
+```
+
+### css选择器：
+
+**format**: SELECTOR {STYLE: value1 value2;}   value字符串也不需要引号包含。
+
+1. ID选择器。```#ID {}```
+2. 类性选择器。```.ClassName {}```。
+3. 属性选择器。[ATTR_NAME OP ATTR] OP: =、~=(属性值包含单词)、|=（属性值第一个单词为），^=，$=, *=
+4. 派生／后代／包含选择器 。 ```SELECTOR1 SELECTOR 2 {}``` 
+5. 子元素选择器。 SELECTOR > SONSELECTOR {} 
+6. 相邻兄弟选择器。 SELECTOR1 + SELECTOR2 {}
+7. 伪类选择器。:SELECTOR。active、focus、hover、link、visited、first-child。。
+8. 伪元素选择器。:SELECTOR。first-letter、first-line、befor、after。
+9. 选择器组。```selector1, selector2… {}```
+
+### css定位（position）
+
+1. static： 默认方式，按照顺序向下排列。
+
+2. relative（相对定位）：保留static默认的空间，相对本来位置位移。
+
+3. absolute（绝对定位）：元素框从文档流中删除。相对包含框定位。
+
+4. fixed： 相对视窗view定位。
+
+5. float：浮动框可以向左或者向右移动，知道它的边缘碰到包含框或者另一个浮动框的边缘。
+
+   浮动框与两边框的关系，clear： left、right、both、none。
+
+### 其他
+
+1. outline、border区别。outline：1，不占空间。2，border有border-left、border-right、border-top、border-bottom。
+2. 百分比参数是相对于父元素宽高的比例。
+3. em： 相对于父级字体大小的px数；rem：相对于html／body的字体大小比例的px数。
+4. white_space: nowarp 禁止文本转行。white_space表示空格和换行。
+5. overflow： visiable、hidden、scroll、auto（如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。 ）、inherit。
+6. @media： 媒体查询
+
