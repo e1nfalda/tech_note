@@ -57,3 +57,6 @@ a = {[mySymbol]: "hello"} // 第二张写法
 Object.defineProperty(a, mySymbol, {value: "hello"})  // 第三种写法
 ```
 
+### Map
+
+> ES6新增。与Object区别，Object key只能字符串类型（各种对象强转为string），Map可以任意类型。

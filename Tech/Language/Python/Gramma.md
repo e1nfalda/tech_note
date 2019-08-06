@@ -64,9 +64,7 @@ class RevStr:
 
 ### Generator(生成器)
 
-`yield`: yield
-
-
+`yield`: 使用yield的场景即Generator。
 
 ### Derector
 

@@ -2,7 +2,7 @@
 
 > 1: 抽象；2: 封装；3: 继承； 4: 多态.
 >
-> emthod，attribute对象 
+> method，attribute对象 
 
 ### 原型链（prototype chain）
 
@@ -12,10 +12,10 @@ function f() {
   this.a = 1
   this.b = 2
 }
-let o = new f();
+let o = new f(); // f此时是原型链的constructor方法。
 f.prototype.b = 3 
 f.prototype.c = 4
-// 不可以用 f.prototype = {b: 3, c: 4};会打破原型链
+// 不可以用 f.prototype = {b: 3, c: 4};会打破原型链,直接prototype成为Map。
 // 原型链： {a: 1, b: 2} --> {b: 3, c: 4} --> Object.prototye --> null
 o.a // 1
 o.b // 2  b=3属性为"属性遮蔽（property shadowing）"
@@ -23,10 +23,11 @@ o.c // 4  如果原型上没有找到该属性，则去上册查找。
 o.d // undefined
 ```
 #### 定义
-- `__proto__`是浏览器对标准`getPrototypeO`和`setPrototypeOf`的访问对象原型(prototype)实现；访问的是
+- `__proto__`是浏览器对标准`getPrototypeOf`和`setPrototypeOf`的访问对象原型(prototype)实现；
 
-- *函数(function)*又一个特殊的属性`prototype`。
-   > [`Function`](https://devdocs.io/javascript/global_objects/function) objects inherit from `Function.prototype`. `Function.prototype` cannot be modified.
+- *函数(function)*有特殊的属性`prototype`。
+   
+  > [`Function`](https://devdocs.io/javascript/global_objects/function) objects inherit from `Function.prototype`. `Function.prototype` cannot be modified.
   ```javascript
   function f() {return 2} // 原型链：f --> Function.prototype --> Object.prototype --> null
   ```
@@ -76,7 +77,7 @@ function CreatePerson(name) {
     console.log("name: ", this.name)
   }
 }
-person = new CreatePerson("Einfalda")
+person = new CreatePerson("Einfalda") // person对象prototype只要constructor为CreatePerson属性。
 ```
 
 #### 原型（prototype）

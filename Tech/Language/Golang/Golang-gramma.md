@@ -24,7 +24,7 @@
 1. *initial statement* and *post statment* can be omited.  
 
    ```go
-   for [i := 1]; i < 10; [i ++] {
+   for [i := 1;] i < 10 [; i ++] {
        // todo
    } 
    ```
