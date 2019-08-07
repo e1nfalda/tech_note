@@ -66,5 +66,33 @@ class RevStr:
 
 `yield`: 使用yield的场景即Generator。
 
-### Derector
+### Decorator(装饰器)
+
+> 装饰器调用关系：decorate().fn()
+
+```python
+def derector(fn):
+  def wrapper(*args, **kwargs):
+    ...fn(*args, **kwargs)..
+  return wrapper
+
+# 带参数
+def decorator(dec_arg...):
+  def wrapper(fn):
+    @functoos.wraps(fn)  # 包到最终返回的函数上
+    def f(*args, **kwargs)
+      ...fn(*args, **kwargs)...
+    return f
+  return wrapper
+
+# class
+class Decorator():
+  def __init__(self, fn):
+    functools.update_wrapper(self, fn)
+    self.fn = fn
+  def __call__(self, *args, **kwargs):
+    self.fn(*args, **kwargs)
+```
+
+
 
