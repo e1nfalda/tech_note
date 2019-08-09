@@ -93,16 +93,69 @@ if x := 10; x > y {
    ```
 
 ### defer
-
-1. execute sequence
-
-```go
+1. execute sequence.FILO
+   ```go
 func d() {
     defer Expression1;
     defer Expreesion2;
     // stacking defer, 先执行Expression2，再执行Expression1；
 }
-```
+   ```
+
+2. `defer` in loop
+
+   ```go
+   // ❌错误示例
+   for {
+     f := os.File("...")
+     defer f.close() // close会成为最后一个f实例。
+   }
+   
+   // 方案
+   for {
+     func () {
+        f := os.File("...")
+     	defer f.close()
+     }()
+   }
+   ```
+   
+3.  A deferred function's arguments are evaluated when the defer statement is evaluated.
+  
+  ```go
+  func() {
+    i := 0
+    defer fmt.Println(i) // print: 0
+    i++
+  }  
+  ```
+  
+4. Deferred functions may read and assign to the returning function's named return values.
+
+   ```go
+   func c() (i int) {
+       defer func() { i++ }()
+       return 1
+   }
+   // 最终返回的i值为： 2
+   ```
+
+   
+
+5. `defer` with `panic`。defer可以再Panic后执行。
+
+   ```go
+   defer func() { 
+     if r := recover(); r!=nil { // recover 类似于异常被catch，上一级的flow正常执行。
+       ...
+     }
+     panic("raise a Panic")
+     ... // 不会被执行到的代码
+   }
+   // Panic 被Recover后，会继续执行流程。打印: continue...
+   ```
+
+   
 
 ### struct
 
@@ -129,6 +182,7 @@ func d() {
        "vertex2": Vertex{3, 4},
    }
    ```
+```
 
 3. `delete(Map, Key)` if Key not in Map, then no op.
 
@@ -146,7 +200,7 @@ func d() {
        f := varF
        f(1, 2)
    }
-   ```
+```
 
    2. closure
 
