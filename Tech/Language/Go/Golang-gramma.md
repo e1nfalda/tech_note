@@ -1,9 +1,5 @@
 # Golang 语法（golang tour）
 
-[golangtour]: 
-
-
-
 ### var
 
 1. **var** statment can be at package or function level;
@@ -157,7 +153,7 @@ func d() {
 
    
 
-### struct
+### slice
 
 1. literals: `s := []int{1, 2, 3, 4}`.
 2. *null slice*: length is 0, capability is 0, no underlying array. 
@@ -229,7 +225,7 @@ func d() {
 
 ***method and pointer indirection(间接):***
 
-1. pass value to pointer method.
+1. pass pointer to pointer method.
 
    ```go
    type Vertex struct {
@@ -245,7 +241,7 @@ func d() {
    }
    ```
 
-2. pass pointer to value method
+2. pass value to value method
 
    ```go
    func (v Vertext) F() {
@@ -270,7 +266,7 @@ func d() {
 
     ```go
     type I interface {
-      M()
+      M() [ReturnType]
     }
     ...
     var i I
@@ -383,4 +379,10 @@ for {
 
 - `sync.Mutex.Lock`
 - `sync.Mutex.Unlock`
+
+
+
+---
+
+
 
