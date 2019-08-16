@@ -17,3 +17,15 @@ where baz in
 )
 ```
 
+#### SQL:
+
+```sql
+select stataments() where group by COLUMN1 
+	[having {function(max/min...)|Express(COLUMN2=V...)}]
+```
+##### partitioning: 分表
+
+1. 水平分表(horizontal): 把不同主键的数据放到不同表中。
+2. 垂直分表(vertical): 把表的不同列分为不同的表。
+
+#### group_concat: 返回结果生成逗号分隔串。
