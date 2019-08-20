@@ -209,6 +209,39 @@ func d() {
    }
    ```
 
+#### struct
+
+**Embedding**: If you embed a nameless struct then the embedded struct provides its state (and methods) to the embedding struct directly 
+
+```go
+type Person struct {
+	name, sex string
+}
+type Policeman struct {
+	Person // Embeding；继承的核心
+	station string
+}
+// 生成实例方法；返回值为*Policeman， 则返回时需要&
+func NewPoliceman(name, sex, station string) *Policeman {
+	return &Policeman{Person{name, sex}, station} // struct literal
+}
+func main() {
+  /* 指针和非指针最终出来时效果一样。细节指针和非指针区别？？
+  */
+	police := Policeman{Person{"wang", "male"}, "abc"}
+	police2 := &Policeman{Person{"wang", "male"}, "abc"}  
+	police3 := NewPoliceman("zhang", "femail", "Peak")
+
+	fmt.Println("Hello, playground", police.name, police2.name, police3.name, police3)
+}
+
+
+```
+
+
+
+
+
 ### Method
 
 ***Define:*** a function with a special receiver argument.
@@ -342,7 +375,7 @@ func d() {
   ```
 
 
-### Goroutines
+#### Goroutines
 
 - ***gramma:***go f(x, y, z)
 
