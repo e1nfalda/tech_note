@@ -183,8 +183,8 @@ func d() {
 3. `delete(Map, Key)` if Key not in Map, then no op.
 
 4. two-value assignments. `v, ok := Map[Key]` 如果`Key`不存在ok=false,否则ok=true。
-
-###Function
+```
+### Function
 
 1. function as variables.
 
@@ -196,7 +196,7 @@ func d() {
        f := varF
        f(1, 2)
    }
-```
+   ```
 
    2. closure
 
@@ -209,7 +209,7 @@ func d() {
    }
    ```
 
-#### struct
+### struct
 
 **Embedding**: If you embed a nameless struct then the embedded struct provides its state (and methods) to the embedding struct directly 
 
