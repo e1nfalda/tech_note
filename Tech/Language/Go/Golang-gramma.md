@@ -49,12 +49,12 @@
 
 1. can start with short statment；
 
-```go
-/* short statment x:= 10, 变量x的作用域仅在 if作用域内 */
-if x := 10; x > y {
-    // todo
-}
-```
+   ```go
+   /* short statment x:= 10, 变量x的作用域仅在 if作用域内 */
+   if x := 10; x > y {
+       // todo
+   }
+   ```
 
 2. 格式。
 

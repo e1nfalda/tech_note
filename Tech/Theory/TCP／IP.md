@@ -18,7 +18,7 @@
 >
 > Segment包只有source Port和Destination Port(IP在网络层)。 
 
-[Segment 结构图](../../../backup/src/134217wuckuyvvcsuygnds.png)
+![Segment 结构图](../../../backup/src/134217wuckuyvvcsuygnds.png)
 
 - Sequence Number: 序列号;解决乱序问题。
 - Acknowledgement Number: ACK。用来确认收到。
@@ -27,7 +27,7 @@
 
 ## TCP状态机
 
-​	[tcpfsm图](../../../backup/src/tcpfsm.png)
+​	![tcpfsm图](../../../backup/src/tcpfsm.png)
 
 - **SYN超时**：server收到SYN返回SYN-ACK后，等待client发送SYN状态时，发送$2^n$(0-4) 秒间隔五次后未收到响应。
 - **SYN FLOOD攻击: ** 因为需要63（1+2+…16）秒所以利用该点，无线发送SYN请求。
@@ -131,4 +131,7 @@
 [维基百科-TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol#Window_scaling)
 
 [tcp in a nutshell](http://www.cs.miami.edu/home/burt/learning/Csc524.032/notes/tcp_nutshell.html)
+
+[深入理解TCP协议（上）：理论基础](http://www.52im.net/thread-513-1-1.html)
+[深入理解TCP协议（下）：理论基础](http://www.52im.net/thread-515-1-1.html)
 
