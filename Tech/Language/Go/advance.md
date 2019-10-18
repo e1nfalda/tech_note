@@ -10,11 +10,11 @@ golang使用的[三色标记法](http://legendtkl.com/2017/04/28/golang-gc/)
 >
 > unitptr:builtin类型。指针单位。32位系统4字节，64位8字节。
 
- #### 主要方法
+ #### methods
 
-- Sizeof(XType) uintptr 。获取*XType*类型占用的字节数
-- Offsetof(XType) unitptr。结构体成员在结构体中位移。XType为结构体member。
-- Alignof(xType) unitptr。*指当类型进行内存对齐时，它分配到的内存地址能整除 m。*
+- **Sizeof(XType) uintptr**。获取*XType*类型占用的字节数
+- **Offsetof(XType) unitptr**。结构体成员在结构体中位移。XType为结构体member。
+- **Alignof(xType) unitptr**。指当类型进行内存对齐时，它分配到的内存地址能整除 m。
 
 #### unsafe.Pointer
 

@@ -1,4 +1,4 @@
-# Golang 语法（golang tour）
+# Golang 语法
 
 ### import
 
@@ -18,6 +18,10 @@
 例： `const x = V`。
 
 1. V  类型： bool、string、chacter、numeric values;
+
+#### iota [aɪ'oʊtə]: 些微
+
+  累加常量。
 
 ### for
 
