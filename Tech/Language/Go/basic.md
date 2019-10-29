@@ -125,15 +125,15 @@ func d() {
    ```
    
 3.  A deferred function's arguments are evaluated when the defer statement is evaluated.
-  
-  ```go
-  func() {
-    i := 0
-    defer fmt.Println(i) // print: 0
-    i++
-  }  
-  ```
-  
+
+    ```go
+    func() {
+      i := 0
+      defer fmt.Println(i) // print: 0
+      i++
+    }  
+    ```
+
 4. Deferred functions may read and assign to the returning function's named return values.
 
    ```go
@@ -166,7 +166,7 @@ func d() {
 1. literals: `s := []int{1, 2, 3, 4}`.
 2. *null slice*: length is 0, capability is 0, no underlying array. 
 
-3. slice os slice: `[][]string{[]string{"a", "b"}, []string{"e", "f"}}`
+3. slice of slice: `[][]string{[]string{"a", "b"}, []string{"e", "f"}}`
 4. *append*: `append(s []T, vs ... T)`
 
 ### range
@@ -186,12 +186,10 @@ func d() {
        "vertex2": Vertex{3, 4},
    }
    ```
-```
-
 3. `delete(Map, Key)` if Key not in Map, then no op.
 
 4. two-value assignments. `v, ok := Map[Key]` 如果`Key`不存在ok=false,否则ok=true。
-```
+
 ### Function
 
 1. function as variables.
@@ -219,9 +217,9 @@ func d() {
 
 ### struct
 
-**Embedding**: If you embed a nameless struct then the embedded struct provides its state (and methods) to the embedding struct directly 
+>**Embedding**: If you embed a nameless struct then the embedded struct provides its state (and methods) to the embedding struct directly.
 
-```go
+  ```go
 type Person struct {
 	name, sex string
 }
@@ -240,15 +238,9 @@ func main() {
 	police2 := &Policeman{Person{"wang", "male"}, "abc"}  
 	police3 := NewPoliceman("zhang", "femail", "Peak")
 
-	fmt.Println("Hello, playground", police.name, police2.name, police3.name, police3)
+	fmt.Println("Hello, playground", police.name, police2.name, 			police3.name, police3)
 }
-
-
-```
-
-
-
-
+  ```
 
 ### Method
 

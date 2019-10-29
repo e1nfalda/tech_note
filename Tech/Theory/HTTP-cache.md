@@ -18,14 +18,16 @@ http缓存分为`强缓存`和`协商缓存`
 **Cache-Control：**
 
 >http1.1协议。
-	>
-	>格式：Cache-Control:Express  
-	>
-	>> 1. max-age:(max-age=X)有效期为多少秒。
-	>> 2. public/private: 被所有节点（代理）/用户节点（浏览器）缓存。
-	>> 3. no-cache:内容会缓存，但每次用都需要去服务器验证。与max-age=0区别，max-age是should，no-cache是must去revalidate。
-	>> 4. no-store: 内容不缓存.
-	>> 5. s-maxage: 仅共享缓存有效。权限高于max-age。
+>
+>格式：Cache-Control: EXPRESSION  
+>
+>> EXPRESSION:
+>>
+>> 1. max-age:(max-age=X)有效期为多少秒。
+>> 2. public/private: 被所有节点（代理）/用户节点（浏览器）缓存。
+>> 3. no-cache:内容会缓存，但每次用都需要去服务器验证。与max-age=0区别，max-age是should，no-cache是must去revalidate。
+>> 4. no-store: 内容不缓存.
+>> 5. s-maxage: 仅共享缓存有效。权限高于max-age。
 
 **Expires**
 
@@ -77,7 +79,7 @@ http缓存分为`强缓存`和`协商缓存`
 ----
 [^时间格式]: 格式如:Thu,31 Dec 2037 23:59:59 GMT
 [^cache]: memory cache：页面未关闭时。disk cache: 页面关闭时。
-[^nginx Etag]: 算法：文件修改日期16进制-文件长度16进制，如ETag：59e72c84-240
+[^nginx Etag]: 算法：文件修改日期16进制-文件长度16进制，如ETag：59e72c84-240。
 
 [缓存控制-CNBlogs](https://www.cnblogs.com/ranyonsue/p/8918908.html)
 [缓存控制-SegmentFault](https://segmentfault.com/a/1190000016546106)
