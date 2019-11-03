@@ -324,9 +324,11 @@ func main() {
   i.M() //  result -> print  "nil"
   ```
 
-- ***Type Assertion***：provide access to an interface value's underlying concret value. 
+- ***Type Assertion***
 
-  >  `v, [ok] = i.(typeNma)` 如果没有OK则抛异常。
+  > provide access to an interface value's underlying concret value. 
+
+  `v, [ok] = i.(typeNma)` 如果没有OK则抛panic。
 
 - ***Type Switch***
 
