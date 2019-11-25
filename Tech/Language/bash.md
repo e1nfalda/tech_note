@@ -5,12 +5,12 @@
 2. A `buffer` is something that has yet to be "written" to disk.
    
 > ？一个空间可以把食物累加到一起再批量操作。
-   
+
 3. A `cache` is something that has been "read" from the disk and stored for later use。
 
    > ？为了更快速的被使用，把内容存储在更快速的层级。
 
-4. ###if: 
+4. ### if:
 
    ```bash
    # []中为test 命令语法 [ <statement> ]有空格。见man test；Boolean Operators || &&
@@ -25,7 +25,7 @@
    fi
    ```
 
-5. ###case
+5. ### case
 
    ```bash
    case <variable> in 
@@ -37,7 +37,7 @@
 
 6. ### crontab
 
-   > crontab网上有`quartz`(java任务框架)，和linux的crontab表达式不同。最明显的是quartz精确到秒。
+   > crontab网上有`quartz`(java任务框架)，和linux的crontab表达式不同。quartz精确到秒。
 
    #### 格式:
 
@@ -62,3 +62,19 @@
    /: 每多久;
 
    %(percent-sign): COMMAND中如果没有被反斜杠\解释，则%后的内容会最会标准输入执行。 
+   
+7. ### stdio
+
+   >stdin: 0
+   >
+   >stdout: 1
+   >
+   >stderror: 2
+
+   redirection（重定向）
+
+   ```	bash
+   echo "text" >&FD # 重导向到&FD，>&FD 位置可变。
+   echo "text" FD1>&FD2 # 把FD1重定向到FD2
+   ```
+

@@ -381,7 +381,7 @@ func main() {
 
 - ***gramma:***go f(x, y, z)
 
-- `sync`  access to shared memory synchronized.
+- `sync` package provides methods  to accesses shared memory synchronized.
 
 #### Channels
 
