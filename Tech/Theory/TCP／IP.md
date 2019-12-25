@@ -104,7 +104,7 @@
 
 
 ### 流量控制（flow control）
-**slide window/advertised window(rwnd)**
+**slide window(advertised window,rwnd)**
 
 > receiver维护。
 >
@@ -112,7 +112,7 @@
 
 **zero window：**receiver通知sender，自己窗口为0，停止发送。`ZWP(Zero Window Probe)`：sender 30-60秒间隔发送三次确认，如果依然zero window，则断开链接。
 
-> *只要有等待的地方都可能出现DDoS攻击，Zero Window也不例外，一些攻击者会在和HTTP建好链发完GET请求后，就把Window设置为0，然后服务端就只能等待进行ZWP，于是攻击者会并发大量的这样的请求，把服务器端的资源耗尽。*
+> **只要有等待的地方都可能出现DDoS攻击**，Zero Window也不例外，一些攻击者会在和HTTP建好链发完GET请求后，就把Window设置为0，然后服务端就只能等待进行ZWP，于是攻击者会并发大量的这样的请求，把服务器端的资源耗尽。
 
 **silly window syndrome**:窗口糊涂综合征。reveiver处理不及sender快，导致window size越来越小，发送的包也越来越小。
 
