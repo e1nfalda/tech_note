@@ -4,7 +4,7 @@
 
 2. A `buffer` is something that has yet to be "written" to disk.
    
-> ？一个空间可以把食物累加到一起再批量操作。
+   > ？一个空间可以把食物累加到一起再批量操作。
 
 3. A `cache` is something that has been "read" from the disk and stored for later use。
 

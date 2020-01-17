@@ -1,8 +1,10 @@
-# TCP／IP
+# 网络协议
 
 ## 分层(tcp/ip 5层,OSI 7层)：
 
-物理、链路、网络、传输、应用。
+![net_protocols](../../../backup/src/net_protocols.png)
+
+![](../../../backup/src/net_protocols-8042098.png)
 
 #### 链路层：实现了hop间的通信协议。PPP、ATM、Ethernet等
 
@@ -73,9 +75,9 @@
 	> β 值一般在1.3到2.0之间。
 	>
 	>### Karn / Partridge 算法：
-	>  
+	> 
 	>​	忽略重传。
-	>  
+	> 
 	>### jacobson/karels 算法：
 	>
 	>- SRTT = SRTT + α (RTT – SRTT) ：计算平滑RTT；
