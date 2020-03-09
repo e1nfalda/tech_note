@@ -22,11 +22,13 @@ o.b // 2  b=3属性为"属性遮蔽（property shadowing）"
 o.c // 4  如果原型上没有找到该属性，则去上册查找。
 o.d // undefined
 ```
+
 #### 定义
+
 - `__proto__`是浏览器对标准`getPrototypeOf`和`setPrototypeOf`的访问对象原型(prototype)实现；
 
 - *函数(function)*有特殊的属性`prototype`。
-   
+  
   > [`Function`](https://devdocs.io/javascript/global_objects/function) objects inherit from `Function.prototype`. `Function.prototype` cannot be modified.
   ```javascript
   function f() {return 2} // 原型链：f --> Function.prototype --> Object.prototype --> null
@@ -38,7 +40,7 @@ o.d // undefined
 ### 对象创建
 
 #### 最直接方法
-> 代码无复用
+> 代码没有复用性，性能较低
 
 ```javascript
 obj1 = new Object();

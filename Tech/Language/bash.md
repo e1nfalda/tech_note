@@ -4,11 +4,11 @@
 
 2. A `buffer` is something that has yet to be "written" to disk.
    
-   > ？一个空间可以把食物累加到一起再批量操作。
+   > 提前申请的空间，用来写入读取等操作。
 
 3. A `cache` is something that has been "read" from the disk and stored for later use。
 
-   > ？为了更快速的被使用，把内容存储在更快速的层级。
+   > 即缓存。把处理后的数据存储在特定空间（一般性能更好的空间）用来更方便的使用。
 
 4. ### if:
 
@@ -77,4 +77,11 @@
    echo "text" >&FD # 重导向到&FD，>&FD 位置可变。
    echo "text" FD1>&FD2 # 把FD1重定向到FD2
    ```
+   
+8. ### xargs
 
+   `xargs -I REPLACEMENT cmd ...REPLACEMENT` 通过-I指定占位符。
+
+9. ### awk
+
+   `awk -F SEPARATOR '{print $1...$N}'`从`$1`开始。`$0`表示整行。`$NF`最后一行。 

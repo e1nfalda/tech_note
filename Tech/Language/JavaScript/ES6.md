@@ -29,8 +29,8 @@
 > `for...of`和`for...in`区别：
 >
 > 1. 遍历object。`for of`无法遍历；`for...in`返回Object key。
-> 2. 遍历array。`for of`返回元素，`forin`返回元素索引index。
-> 3. `forof`内部通过"iteration"实现。支持Array、Set、Map、Generator、String、ArrayLike（arguments、DomNodeList etc）。
+> 2. 遍历array。`for of`返回元素，`for...in`返回元素索引index(String)。
+> 3. `for...of`内部通过"iteration"实现。支持Array、Set、Map、Generator、String、ArrayLike（arguments、DomNodeList etc）。
 
 ### Symbol
 
@@ -59,4 +59,4 @@ Object.defineProperty(a, mySymbol, {value: "hello"})  // 第三种写法
 
 ### Map
 
-> ES6新增。与Object区别，Object key只能字符串类型（各种对象强转为string），Map可以任意类型。
+> ES6新增。与Object区别，Object `Key`只能字符串类型（各种对象强转为string），Map可以任意类型。
