@@ -75,8 +75,9 @@
 
    ```	bash
    echo "text" >&FD # 重导向到&FD，>&FD 位置可变。
-   echo "text" FD1>&FD2 # 把FD1重定向到FD2
+   echo "text" FD1>&FD2 # 把FD1重定向到FD2.
    ```
+   > ！FD>FD 不可以有空格。
    
 8. ### xargs
 

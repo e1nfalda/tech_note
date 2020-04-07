@@ -1,5 +1,9 @@
 # Golang 语法
 
+### go get
+
+> `go get -u ./...` 更新/安装项目需要的包 
+
 ### import
 
 1. `import _ "packageName"`golang导入如果不使用会编译错误。通过`_`导入则可以不使用也不报错。
