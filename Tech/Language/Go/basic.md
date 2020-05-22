@@ -6,7 +6,7 @@
 
 ### import
 
-1. `import _ "packageName"`golang导入如果不使用会编译错误。通过`_`导入则可以不使用也不报错。
+1. `import [_,Alias_Name] "packageName"`golang导入如果不使用会编译错误。通过`_`导入则执行`init()`,不调用也不报错。
 
 ### var
 
@@ -23,9 +23,22 @@
 
 1. V  类型： bool、string、chacter、numeric values;
 
-#### iota [aɪ'oʊtə]: 些微
+### iota [aɪ'oʊtə]: 些微
 
-  累加常量。
+  累加常量。在`const`声明中，初始化0。
+
+```go
+const (
+    a1 = iota  // 0
+    a2, // 1
+    _,
+    a3, // 3
+    a4 = 2, // 有赋值的则跳过正则。
+    a5   // 4
+)
+```
+
+
 
 ### for
 
@@ -150,7 +163,7 @@ func d() {
 
    
 
-5. `defer` with `panic`。defer可以再Panic后执行。
+5. `defer` with `panic`。defer可以在Panic后执行。
 
    ```go
    defer func() { 
@@ -368,11 +381,11 @@ func main() {
 
   如：字符串转字符数组`[]byte(stringValue)`。
 
-- #### tags
+### tags
 
   ```go
   type M struct {
-    Field int `a: ""` //unmashal field需要captain
+    Field int `a: ""` //unmashaled field name’s first letter should be capitalized。 
   }
   ...
   t = reflect.TypeOf(M)
@@ -381,7 +394,7 @@ func main() {
   ```
 
 
-#### Goroutines
+### Goroutines
 
 - ***gramma:***go f(x, y, z)
 

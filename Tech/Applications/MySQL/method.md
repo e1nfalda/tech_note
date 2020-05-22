@@ -1,4 +1,9 @@
 ## 用到的方法
 
-- **group_concat(column)**搜索结果所有行的column为一个。结果格式：`id1,id2,id3`
-- **concat(row1, row2,str...)**拼接每一行上column字符串
+- `group_concat(COLUMN)`搜索结果拼接：
+
+    `select group_concat(id,"_",type_id) from table;`-> "1_1,2_1,3_type,4,5,..."
+
+- `concat(row1, row2,str...)`: 字符串拼接
+
+    `select concat(id,"," type_id)`-> "1,type1";"2,type2"...
