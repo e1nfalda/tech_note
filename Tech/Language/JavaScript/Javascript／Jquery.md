@@ -22,4 +22,10 @@
    $temp.remove();
    ```
 
-
+7. `import {X as AliasX} from 'package'`
+8. js Boolean.
+   - **False**: "", 0, undefined, Nan, null。 
+   - **True**: [], {}, Object。
+9. 正则。
+   - (abc|d) 匹配 “abc”或者“d”。
+   - [abc|d] 匹配 "a", "b", **"|"**, "d"。

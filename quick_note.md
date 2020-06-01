@@ -1,11 +1,35 @@
-### python
+### 
 
-good_:Open a file, returning an object of the [`file`](https://devdocs.io/python~2.7/library/functions#file) type described in section [File Objects](https://devdocs.io/python~2.7/library/stdtypes#bltin-file-objects). If the file cannot be opened, [`IOError`](https://devdocs.io/python~2.7/library/exceptions#exceptions.IOError) is raised. When opening a file, it’s preferable to use [`open()`](https://devdocs.io/python~2.7/library/functions#open) instead of invoking the [`file`](https://devdocs.io/python~2.7/library/functions#file) constructor directly.
+#### open: mode
 
-The first two arguments are the same as for `stdio`’s `fopen()`: _name_ is the file name to be opened, and _mode_ is a string indicating how the file is to be opened.
+- `r`：缺省值。如果文件不存在`IOError`;
 
-The most commonly-used values of _mode_ are `'r'` for reading, `'w'` for writing (truncating the file if it already exists), and `'a'` for appending (which on _some_ Unix systems means that _all_ writes append to the end of the file regardless of the current seek position). If _mode_ is omitted, it defaults to `'r'`. The default is to use text mode, which may convert `' '` characters to a platform-specific representation on writing and back on reading. Thus, when opening a binary file, you should append `'b'` to the _mode_ value to open the file in binary mode, which will improve portability. (Appending `'b'` is useful even on systems that don’t treat binary and text files differently, where it serves as documentation.) See below for more possible values of _mode_.
+- `w`: 如果存在则删除文件后再新建。
 
-The optional _buffering_ argument specifies the file’s desired buffer size: 0 means unbuffered, 1 means line buffered, any other positive value means use a buffer of (approximately) that size (in bytes). A negative _buffering_ means to use the system default, which is usually line buffered for tty devices and fully buffered for other files. If omitted, the system default is used. [2](https://devdocs.io/python~2.7/library/functions#id4)
+- `a`: append.文件存在打开，不存在新建。
 
-Modes `'r+'`, `'w+'` and `'a+'` open the file for updating (reading and writing); note that `'w+'` truncates the file. Append `'b'` to the mode to open the file in binary mode, on systems that differentiate between binary and text files; on systems that don’t have this distinction, adding the `'b'` has no effect.
+- `b`: 不做特殊字符转换。如果没有比如换行符会换成平台对应的换行符。默认为`t`.
+
+- `w+`,`a+`,`r+`: updating。w+也会先删除
+
+  read模式不能write，write模式不能read。
+
+
+
+#### `shebang`: If you're writing scripts, ensure it has a [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) at the top
+
+#### glob vs regexp
+
+regexp 比glob语法复杂，实现更多的功能。
+
+1. glob：实现的语法比较少。主要：`[]`,`[^]`,`?`,`*`。
+
+2. 含义不太一样，对应关系：**?**=> **.**; *=>".*"
+
+3. 核心差异没有实现`克林闭包`。
+
+   >
+   >
+   >克林闭包（Kleene star or Kleene operator or Kleene closure）：R*语法。
+   >
+   >即a\*	表示:a, aa, aaa
