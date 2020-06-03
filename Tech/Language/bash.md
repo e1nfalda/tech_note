@@ -1,6 +1,10 @@
 ## bash
 
-1. ``` sed -i 's/old_string/new_string/g'  \`grep old_string -rl ./ | grep -vE "tags|svn"\` ```     //特殊要求的替换：此命令中要求过滤掉含有tags和svn的文件。
+1. in-place substitution（原地替换）
+	1. ``` sed -i "" 's/old_string/new_string/g'  \`grep old_string -rl ./ | grep -vE "tags|svn"\` ```     //特殊要求的替换：此命令中要求过滤掉含有tags和svn的文件。mac 版本-i  *extension* ,以*extension*为后缀保存原文件。
+     >如果文件尾部没有换行符，sed会默认加上，所以该方案不是好的方案。
+	2. `perl -i [extension] -pe 's/STRING/REPLACEMENT/'`perl版本，避免尾部换行符问题。
+   
 
 2. A `buffer` is something that has yet to be "written" to disk.
    

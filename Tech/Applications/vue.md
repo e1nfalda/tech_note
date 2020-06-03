@@ -16,17 +16,9 @@ Vue.set/this.$set(object, key, value)
 this.someObject = Object.assign({}, this.someObject)
 
 ### array
-
 Vue.set(array, index, newValue)
 array.splice(index, 1, newValue)
-支持的方法。
-push()
-pop()
-shift()
-unshift()
-splice()
-sort()
-reverse()
+ **支持的方法**: `push()`, `pop()`,`shift()`, `unshift()`, `splice()`, `sort()`, `reverse()`
 
 ### 声明响应式属性。
 

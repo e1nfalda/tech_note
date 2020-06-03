@@ -38,7 +38,7 @@ Meta-fields are used to customize how a document’s metadata associated is trea
 
 `enabled`: 是否自动检索全部field。只检索top-level，不检索Object内部。
 
-`dynamic`: 是否自动检索mapping新增field。true:检索；false: 忽略；strict: 报错。 
+`dynamic`: 是否自动检索mapping新增field。true:检索(**default**)；false: 忽略；strict: 报错。 可以设置到mapping或field层。mapping时底层会继承相关属性。
 
 
 
