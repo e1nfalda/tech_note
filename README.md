@@ -1,5 +1,5 @@
 ## note
-[[basic]]
+[quick note](./quick_note.md)
 
 ### moto 
 
