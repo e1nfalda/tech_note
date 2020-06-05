@@ -28,21 +28,21 @@ where baz in
 2. 垂直分表(vertical): 把表的不同列分为不同的表。
 
 ### sql_mode
-##### 查看sql_mode
-
+Server SQL modes define what SQL syntax MySQL should support and what kind of data validation checks it should perform. 
+#### tips 
 1. 不同的mode下对sql语法的校验规则不同。如对autoincrement属性插入值是否、not null字段不能为空等的校验反馈不同。有的事warning、有的是直接Error。
-
 2. 一般在测试环境下使用严格模式。
-
 3. sql_mode属性可以动态修改，但可能会引起数据丢失或损坏（loss or corruption of data）。
-
-注意主从表的sql_mode保持一致。
-
+4. 可以设置为`global`， `session`。
 ```mysql
+// 查询
 SELECT @@GLOBAL.sql_mode; 
 SELECT @@SESSION.sql_mode;
 ```
+5. SELECT @@sql_mode
 
+#### strict_mode
+sql_mod包含一个 `TRADITIONAL`, `STRICT_TRANS_TABLES`, `STRICT_ALL_TABLES`一种以上设置。
 
 
 ### like 语句相关索引。
