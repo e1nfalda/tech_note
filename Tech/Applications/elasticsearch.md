@@ -40,10 +40,40 @@ Meta-fields are used to customize how a document’s metadata associated is trea
 
 `dynamic`: 是否自动检索mapping新增field。true:检索(**default**)；false: 忽略；strict: 报错。 可以设置到mapping或field层。mapping时底层会继承相关属性。
 
+#### 设置
 
+[replicate等常用设置.](file:///Users/yao/Dropbox/文章/Tech/ES/ElasticIndexSettingSummary.pdf)
+
+
+
+#### should must
+`should`： 逻辑or ，加分;
+
+> **must** means: The clause (query) must appear in matching documents. These clauses must match, like logical **AND**.
+> **should** means: At least one of these clauses must match, like logical **OR**.
+> Basically they are used like logical operators AND and OR. See [this](http://www.elasticsearch.org/guide/en/elasticsearch/guide/current/_most_important_queries_and_filters.html#_bool_filter).
+>
+> Now in a [bool query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-bool-query.html):
+>
+> **must** means: Clauses that *must* match for the document to be included.
+>
+> **should** means: If these clauses match, they increase the `_score`; otherwise, they have no effect. They are simply used to refine the relevance score for each document.
+
+#### You can use **term-level queries** to find documents based on precise values in structured data.
+
+
+
+### DSL
+
+#### `query context` vs `filter context`
+
+`query_context（scroing queries）`: 评分。不可缓存。
+
+`filter_context`: 不评分。结果可缓存。
 
 ___
 
 [^基本概念]: [10个基本概念](file:///Users/yao/Dropbox/文章/Tech/ES/10 Elasticsearch Concepts You Need to Learn _ Logz.io __ Reader View.pdf)
+
 [^ metafield]: [meta fields 5大类常用属性](file:///Users/yao/Dropbox/文章/Tech/ES/meta_fields.pdf)
 
