@@ -32,3 +32,25 @@ type Pointer *ArbitraryType
 > reflect把数据从内存中映射到**Value**/**Type** struct中，及相关操作的接口集合。
 >
 > 反射的流程是把
+
+
+
+### golang unpack时不能传递给interface{}类型参数
+
+```go
+func f(v ...interface{}) {
+	fmt.Println("Hello, playground", v[0], v[1])
+}
+
+func main() {
+	a := strings.Split("a,b,c", ",")
+	f(a...)
+}
+
+// cannot use a (type []string) as type []interface {} in argument to f
+
+```
+
+[string to interface{}](https://stackoverflow.com/questions/27689058/convert-string-to-interface)
+
+https://golang.org/doc/faq#convert_slice_of_interface
