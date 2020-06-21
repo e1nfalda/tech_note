@@ -25,15 +25,10 @@
 #### Bash
 
 1. bash中空格不能多，如果=号中间没有空格`a=b`为赋值；如果有空格`a = b`,则是条件判断。
-
 2. `set`:Display, set or unset values of shell attributes and positional parameters.
-
 3. `mktemp` 生成临时文件名。
-
 4. `trap`设置处理signal处理。`trap commnds SIGNAL`.
-
 5. `${!VAR}`取变量最终值。如果变量VAR的值也是变量。则获得变量指的变量的值。
-
 6. 字符串操作。
 
     1. `${ #STRING }` 字符串长度。
@@ -47,16 +42,14 @@
               	3. 任意位置开始。`${ STRING/PATTERN}`正则模式。`${ STRING//PATTERN}`f
               	4. 替换。`${ STRING/[#/%]PATTERN/SUBSTITUTION}`
     4. 改变大小写。 `${ STRING^^ }`大写。`{ STRING,, }`小写。zsh下`${ STRING:u}` uppercase和`${ STRING:l}` lowercase。
-    
 7. 数据重定向。 command  [1,2]> FILE(&1,&2)
-
 8. `read [-s(密码模式)] [-p "prompt"] [-d TERMINATOR(单字符，缺省回车键)] [-n NUM] [VAR]`输入内容给变量VAR，如果VAR未提供，则赋值到环境变量`REPPLY`.
-   
-9. 数组。`a=(1 2 3)` 。`a[INDEX]`index从1开始。
+9. 数组。`a=(1 2 3)` 。`a[INDEX]`index从1开始.     
 
-    ​     
+### docker三剑客：
+compose、machine 和 swarm 是docker 原生提供的三大编排工具。
+### python
 
-    ​      
 
 ### Four Quadrant（四象限）
 

@@ -38,7 +38,7 @@ with WithDemo() as f:
 >         raise  # MyException会被再次抛出
 >   ```
 >
->      
+> ​     
 ### Exception
 
 作用：
@@ -156,3 +156,8 @@ class Decorator():
 2.  通过对象调用。`Object.fn(instance, *args)。`
 
    > *with*语法实现原理中`enter = (type(object).__enter__)`
+
+
+### 其他：
+
+**inner class:** class 中定义class,为了更好的代码结构。通过`six`package with_classmeta

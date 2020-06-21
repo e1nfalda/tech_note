@@ -3,9 +3,9 @@
 1. in-place substitution（原地替换）
 	1. ``` sed -i "" 's/old_string/new_string/g'  \`grep old_string -rl ./ | grep -vE "tags|svn"\` ```     //特殊要求的替换：此命令中要求过滤掉含有tags和svn的文件。mac 版本-i  *extension* ,以*extension*为后缀保存原文件。
      >如果文件尾部没有换行符，sed会默认加上，所以该方案不是好的方案。
-	2. `perl -i [extension] -pe 's/STRING/REPLACEMENT/'`perl版本，避免尾部换行符问题。
+	
+   2. `perl -i [extension] -pe 's/STRING/REPLACEMENT/'`perl版本，避免尾部换行符问题。
    
-
 2. A `buffer` is something that has yet to be "written" to disk.
    
    > 提前申请的空间，用来写入读取等操作。
@@ -65,15 +65,13 @@
 
    /: 每多久;
 
-   %(percent-sign): COMMAND中如果没有被反斜杠\解释，则%后的内容会最会标准输入执行。 
+   %(percent-sign): COMMAND中如果没有被反斜杠\解释，则%后的内容会标准输入执行。 
    
 7. ### stdio
 
-   >stdin: 0
-   >
-   >stdout: 1
-   >
-   >stderror: 2
+   > stdin: 0
+   > stdout: 1
+   > stderror: 2
 
    redirection（重定向）
 
@@ -81,7 +79,7 @@
    echo "text" >&FD # 重导向到&FD，>&FD 位置可变。
    echo "text" FD1>&FD2 # 把FD1重定向到FD2.
    ```
-   > ！FD>FD 不可以有空格。
+   > **FD>FD 不可以有空格。**
    
 8. ### xargs
 
@@ -110,7 +108,11 @@
 脚本文件内部，可以使用特殊变量，引用这些参数。
 
 - $0：脚本文件名，即script.sh。
-- $1~$9：对应脚本的第一个参数到第九个参数。
-- $#：参数的总数。
+- `$1`-`$9`：对应脚本的第一个参数到第九个参数。
+- $#：参数的总数(数字)。
 - $@：全部的参数，参数之间使用空格分隔。
 - $*：全部的参数，参数之间使用变量$IFS值的第一个字符分隔，默认为空格
+
+## find
+
+`find -type [f/d]` 指定文件类型 f(ile) or d(irectory)
