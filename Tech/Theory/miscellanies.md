@@ -60,3 +60,7 @@ golang，只要实现了相应接口的方法就可以调用。
 // Mello网络流局域网其它设备的流量
 wlan0/eth0 -> br-lan -> FORWARD (iptables) -> tun1 -> tun2socks (Mellow) -> ROUTING -> pppoe-wan
 ```
+
+#### semaphore（信号量） vs mutex
+
+互斥锁和**binary semaphore**比较类似，但机制有不同。互斥锁可以被其他unlock。

@@ -73,7 +73,7 @@
    > stdout: 1
    > stderror: 2
 
-   redirection（重定向）
+   redirection（重定向）` command  [1,2]> FILE(&1,&2)`
 
    ```	bash
    echo "text" >&FD # 重导向到&FD，>&FD 位置可变。
@@ -112,6 +112,31 @@
 - $#：参数的总数(数字)。
 - $@：全部的参数，参数之间使用空格分隔。
 - $*：全部的参数，参数之间使用变量$IFS值的第一个字符分隔，默认为空格
+
+### other
+
+#### Bash
+
+1. bash中空格不能多，如果=号中间没有空格`a=b`为赋值；如果有空格`a = b`,则是条件判断。
+2. `set`:Display, set or unset values of shell attributes and positional parameters.
+3. `mktemp` 生成临时文件名。
+4. `trap`设置处理signal处理。`trap commnds SIGNAL`.
+5. `${!VAR}`取变量最终值。如果变量VAR的值也是变量。则获得变量指的变量的值。
+6. 字符串操作。
+
+    1. `${ #STRING }` 字符串长度。
+
+    2. `${ STRING: offset [:length] }` 截取字符串。offset 从0开始。
+
+    3. 正则匹配操作。
+
+        	1. 头部开始匹配删除。`${ STRING#PATTERN }`（非贪婪模式）删除正则匹配内容。`${ STRING##PATTERN}`贪婪模式。*如果匹配不成功则返回原字符串。*
+     	2. 尾部开始匹配删除。`${ STRING%PATTERN }`非贪婪模式。`${ STRING%%pattern}`贪婪模式。
+              	3. 任意位置开始。`${ STRING/PATTERN}`正则模式。`${ STRING//PATTERN}`f
+              	4. 替换。`${ STRING/[#/%]PATTERN/SUBSTITUTION}`
+    4. 改变大小写。 `${ STRING^^ }`大写。`{ STRING,, }`小写。zsh下`${ STRING:u}` uppercase和`${ STRING:l}` lowercase。
+8. `read [-s(密码模式)] [-p "prompt"] [-d TERMINATOR(单字符，缺省回车键)] [-n NUM] [VAR]`输入内容给变量VAR，如果VAR未提供，则赋值到环境变量`REPPLY`.
+9. 数组。`a=(1 2 3)` 。`a[INDEX]`index从1开始.     
 
 ## find
 
