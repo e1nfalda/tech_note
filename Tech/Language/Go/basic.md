@@ -17,11 +17,12 @@
 
 1. `T(v)`
 
-### const
+### constant
 
-例： `const x = V`。
-
-1. V  类型： bool、string、chacter、numeric values;
+ `const x [TYPE] = V`
+>作用域：A constant can only be used within its declared scope. If you redeclare a constant in an inner scope with the same name again, it’ll be a new constant that is only visible to that inner scope and it will shadow the outer scope’s constant.
+1. 数值常量默认没有类型。类型转换后就会是相应的类型。
+2. V  类型： bool、string、character、numeric values;
 
 ### iota [aɪ'oʊtə]: 些微
 
@@ -114,6 +115,13 @@ const (
    ```
 
 ### defer
+
+> 有defer函数执行顺序。
+>
+> defer 编译时生成struct。struct包含PC（程序计数器），函数及参数值等信息。
+>
+> 函数语句（defer函数的param传递生成） ---> return语句 ---> defer lastInFunc -> defer firstInFunc -> return值 
+
 1. execute sequence.FILO
    ```go
 func d() {
@@ -126,13 +134,13 @@ func d() {
 2. `defer` in loop
 
    ```go
-   // ❌错误示例
+   // ❗如果f是比较大结构会占用大量栈空间。
    for {
      f := os.File("...")
-     defer f.close() // close会成为最后一个f实例。
+     defer f.close()
    }
    
-   // 方案
+   // ✅ 匿名函数结束后就可以尽快释放空间。
    for {
      func () {
         f := os.File("...")

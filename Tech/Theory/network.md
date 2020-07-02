@@ -30,3 +30,17 @@
 > `awdl0` is [Apple Wireless Direct Link](https://stackoverflow.com/questions/19587701/what-is-awdl-apple-wireless-direct-link-and-how-does-it-work)
 >
 > `p2p0` is related to AWDL features. Either as an old version, or virtual interface with different semantics than `awdl`.
+
+
+
+### gateway
+
+TCP/IP协议中网络设备分两类，主机（host）和网关（gateway）。
+
+> The term gateway can also loosely refer to a computer or computer program configured to perform the tasks of a gateway, such as a [default gateway](https://en.wikipedia.org/wiki/Default_gateway) or [router](https://en.wikipedia.org/wiki/Router_(computing)).
+>
+> In enterprise networks, a network gateway usually also acts as a [proxy server](https://en.wikipedia.org/wiki/Proxy_server) and a [firewall](https://en.wikipedia.org/wiki/Firewall_(computing)).
+
+使用不同通信协议的设备之间数据传输的设备。
+
+**Default gateway**：If you add a routing entry to route the traffic destined to reach any destination pointing a next hop address , the next hop is your default gateway.
