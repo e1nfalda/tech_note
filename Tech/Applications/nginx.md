@@ -1,17 +1,27 @@
+### 正则
+
+使用==RCPE(Perl Compatible Regular Expressions)==正则规则。
+
 ### location
 
-语法：**location [= | ~ | ~\* | ^~] uri {...}**   / **location @name {...}**
+#### 语法：
 
-> prefix-based location/label: 没有modifier,=,~^。 
-> 
-> regex-based location: 正则类型。~*, ~
+​	1. `location [= | ~ | ~\* | ^~] uri {...}`
+
+​	2. `location @name {...}`
+
+> prefix-based location modifier： =；~^。 
+>
+> 正则(regex-based location)类型modifer： ~*, ~
+>
+> 没有modifier；
 
 **modifier**:
 
-1. **=** ：精准匹配。
-2. **～**：正则匹配。区分大小写。
-3. **～***：正则匹配。不区分大小写。
-4. **^~**: 以该标签开头的字段。
+1. `=` ：精准匹配。
+2. `^~`: 以该标签开头的字段。
+3. `～`：正则匹配。区分大小写。
+4. `～`：正则匹配。不区分大小写。
 
 **匹配流程**：
 
@@ -24,7 +34,10 @@
 - 匹配正则规则。
   
   1. 如果正则匹配到则使用匹配到的最早（first match）的规则。
-  2. 如果未匹配到而有prefix匹配到则从prefix中选最长的匹配规则。
+  
+- 最终回归 缺省匹配
+  
+  2. 如果未匹配到而有prefix匹配到则从缺省prefix中选最长的匹配规则。
 
 ### server_name:
 
@@ -32,6 +45,56 @@
 
 > 规则同location 类似。
 
-### $arg_ARGNAME
-
 ### if
+
+#### 正则表达式匹配
+
+- `~` 区分大小写匹配
+
+- `~*` 不区分大小写匹配
+
+- `!~`和`!~*`分别为区分大小写不匹配及不区分大小写不匹配
+
+- `^` 以什么开头的匹配
+
+- `$` 以什么结尾的匹配
+
+- `\`转义字符。可以转. * ?等 \* 代表任意字符
+
+####  文件及目录匹配
+
+-f和!-f用来判断是否存在文件
+
+-d和!-d用来判断是否存在目录
+
+-e和!-e用来判断是否存在文件或目录
+
+-x和!-x用来判断文件是否可执行
+
+### 参数
+
+```bash
+$host ： 请求主机头字段，否则为服务器名称。
+$http_user_agent ： 客户端agent信息
+$http_cookie ： 客户端cookie信息
+$request_method ： 客户端请求的动作，通常为GET或POST。
+$content_length ： 请求头中的Content-length字段。
+$content_type ： 请求头中的Content-Type字段。
+$request_uri ： 包含请求参数的原始URI，不包含主机名，如：”/foo/bar.php?arg=baz”。
+$uri ： 不包含请求参数的当前URI，$uri不包含主机名，如”/foo/bar.html”。
+$document_uri ： 与$uri相同。
+$query_string 
+$args ： 这个变量等于请求行中的参数，同$query_string
+$document_root ： 当前请求在root指令中指定的值。
+$limit_rate ： 这个变量可以限制连接速率。
+$request_body_file 
+$request_filename ： 当前请求的文件路径，由root或alias指令与URI请求生成。
+$remote_addr ： 客户端的IP地址。
+$remote_port ： 客户端的端口。
+$remote_user ： 已经经过Auth Basic Module验证的用户名。
+$scheme ： HTTP方法（如http，https）。
+$server_protocol ： 请求使用的协议，通常是HTTP/1.0或HTTP/1.1。
+$server_addr ： 服务器地址，在完成一次系统调用后可以确定这个值。
+$server_name ： 服务器名称。
+$server_port ： 请求到达服务器的端口号。
+```
