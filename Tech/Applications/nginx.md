@@ -43,17 +43,18 @@
 
 语法：server_name: SERVER_NAME/IP:PORT;
 
-> 规则同location 类似。
+> 规则与location 类似。
 
-### if
+### if 判断
+
+> ​	The only 100% safe things which may be done inside if in a location context are:
+>
+> - [return](https://nginx.org/en/docs/http/ngx_http_rewrite_module.html#return) ...;
+> - [rewrite](https://nginx.org/en/docs/http/ngx_http_rewrite_module.html#rewrite) ... last;
 
 #### 正则表达式匹配
 
-- `~` 区分大小写匹配
-
-- `~*` 不区分大小写匹配
-
-- `!~`和`!~*`分别为区分大小写不匹配及不区分大小写不匹配
+- `~` `~*` `!~`和`!~*`,`=`,`!=`
 
 - `^` 以什么开头的匹配
 
@@ -85,6 +86,7 @@ $uri ： 不包含请求参数的当前URI，$uri不包含主机名，如”/foo
 $document_uri ： 与$uri相同。
 $query_string 
 $args ： 这个变量等于请求行中的参数，同$query_string
+$arg_ARG: 获取某个具体参数。
 $document_root ： 当前请求在root指令中指定的值。
 $limit_rate ： 这个变量可以限制连接速率。
 $request_body_file 
