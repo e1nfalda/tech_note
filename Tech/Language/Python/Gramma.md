@@ -146,11 +146,9 @@ class Decorator():
    ```python
    X = type('X', (object, ), dict(a=1)) 
    # 等效:
-# class X(object):
+   class X(object):
    #  a = 1
    ```
-   
-   
 
 ### method调用
 
@@ -161,7 +159,7 @@ class Decorator():
    > *with*语法实现原理中`enter = (type(object).__enter__)`
    
 ### file
-open: mode
+#### mode
 
 *read模式不能write，write模式不能read。*
 
@@ -170,10 +168,23 @@ open: mode
 - a: append.文件存在打开，不存在新建。
 - b: 不做特殊字符转换。如果没有比如换行符会换成平台对应的换行符。默认为t.
 - w+,a+,r+: updating。w+也会先删除。
-  
-  
-   
+
+#### performance
+
+`read([size])`: 读取size或全部内容为string。大文件可能内存溢出等。
+
+`readlines()`: 读取全部文件为string list。
+
+`readline():`iterator, 读取一行。
+
+`for line in fd`: 系统缓存优化，速度快。==推荐方式==
+
+
 
 ### 其他：
 
 **inner class:** class 中定义class,为了更好的代码结构。通过`six`package with_classmeta。
+   ```
+
+
+   ```
