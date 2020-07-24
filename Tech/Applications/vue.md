@@ -8,6 +8,9 @@ Object.defineProperty把所有属性转为getter/setter
 
 ### 流程图
 
+![Vue 实例生命周期](../../../backup/src/lifecycle.png)
+
+
 ### Object类型
 
 通过特定方法设置
