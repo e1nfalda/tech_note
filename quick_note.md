@@ -77,3 +77,19 @@ According to the [ES5 spec](http://es5.github.com/), when doing [bitwise operati
 ```sh
 awk 'FNR>=20 && FNR<=40' file_name
 ```
+
+
+
+
+
+### 心跳（health check）
+
+#### 针对问题
+
+1. 长时间不交流超时断开。
+2. 中间链路入路由等出现问题，产生**死链**
+
+>  tcp keep alive：固定时间发送包。
+>
+> nginx： fail_times && timeout_time
+
