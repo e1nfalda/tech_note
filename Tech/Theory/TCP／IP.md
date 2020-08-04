@@ -2,9 +2,9 @@
 
 ## 分层(tcp/ip 5层,OSI 7层)：
 
-![net_protocols](../../../backup/src/net_protocols.png)
+![net_protocols](../.././src/net_protocols.png)
 
-![](../../../backup/src/net_protocols-8042098.png)
+![](../.././src/net_protocols-8042098.png)
 
 #### 链路层：实现了hop间的通信协议。PPP、ATM、Ethernet等
 
@@ -20,16 +20,16 @@
 >
 > Segment包只有source Port和Destination Port(IP在网络层)。 
 
-![Segment 结构图](../../../backup/src/134217wuckuyvvcsuygnds.png)
+![Segment 结构图](../.././src/134217wuckuyvvcsuygnds.png)
 
 - Sequence Number: 序列号;解决乱序问题。
 - Acknowledgement Number: ACK。用来确认收到。
 - Window(Advertised-Window):滑动窗口。流量控制。
-- TCP Flag: 包的类型。SYN,FIN,ACK…[详细](../../../backup/src/image-20190725155505155.png) 
+- TCP Flag: 包的类型。SYN,FIN,ACK…[详细](../.././src/image-20190725155505155.png) 
 
 ## TCP状态机
 
-​	![tcpfsm图](../../../backup/src/tcpfsm.png)
+​	![tcpfsm图](../.././src/tcpfsm.png)
 
 - **SYN超时**：server收到SYN返回SYN-ACK后，等待client发送SYN状态时，发送$2^n$(0-4) 秒间隔五次后未收到响应。
 - **SYN FLOOD攻击: ** 因为需要63（1+2+…16）秒所以利用该点，无线发送SYN请求。
