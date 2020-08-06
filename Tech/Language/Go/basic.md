@@ -442,6 +442,52 @@ for {
 
 
 
+
+
+os.Args,
+
+ os.Open(),op.Create, os.OpenFile(), os.Close():
+
+sync.WaitGroup  wg.Add, wg.Wait
+
+sync.Lock, sync.Unlock
+
+%t : Boolean
+
+%T: typeof
+
+%e, %f: float
+
+### channel
+
+make (chan val-type, buffer_size)
+
+#### select
+
+> `default`: 表示非阻塞。
+
+```go
+select {
+    case var1 <- chan1:
+    	...
+    default:
+    	...
+}
+
+```
+
+#### 关闭
+
+```go
+if reflect.ValueOf(e).Field(i).Kind() != reflect.Struct {
+    fmt.Println(reflect.ValueOf(e).Field(i))
+}
+```
+
+
+
+==type aliase==
+
 ---
 
 

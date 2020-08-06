@@ -64,3 +64,14 @@ wlan0/eth0 -> br-lan -> FORWARD (iptables) -> tun1 -> tun2socks (Mellow) -> ROUT
 #### semaphore（信号量） vs mutex
 
 互斥锁和**binary semaphore**比较类似，但机制有不同。互斥锁可以被其他unlock。
+
+### 心跳检测（health check）
+
+#### 针对问题
+
+1. 长时间不交流超时断开。
+2. 中间链路入路由等出现问题，产生**死链**
+
+>  tcp keep alive：固定时间发送包。
+>
+>  nginx： fail_times && timeout_time

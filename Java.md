@@ -9,7 +9,7 @@
 
 #### 访问控制
 
-> ### 访问控制和继承
+> ### 
 >
 > - 父类中声明为 public 的方法在子类中也必须为 public。
 > - 父类中声明为 protected 的方法在子类中要么声明为 protected，要么声明为 public，不能声明为 private。
