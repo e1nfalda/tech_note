@@ -2,16 +2,12 @@
 [quick note](./quick_note.md)
 
 ### moto 
-
 1. 元认知（metacongnition）
 2. 好奇心
 3. 简化问题。
-
-4. 思维跳跃性
-
+### 4. 思维跳跃性
 5. 对观点的态度
 6. 对人的态度
-
 ### Fragment
 
 #### golang booklist
