@@ -52,10 +52,11 @@ sql_mod包含一个 `TRADITIONAL`, `STRICT_TRANS_TABLES`, `STRICT_ALL_TABLES`一
 
 ### clustered index(聚簇索引) & unclustered index（非聚簇索引/HeapTree）
 
-1. Accessing a row through the clustered index is fast because the index search leads directly to the page with all the row data.
-2. All indexes other than the clustered index are known as [secondary indexes](https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_secondary_index).
+> 1. It is generally faster to read from a clustered index if you want to get back all the columns. You do not have to go first to the index and then to the table.Writing to a table with a clustered index can be slower, if there is a need to rearrange the data.
+> 2. Accessing a row through the clustered index is fast because the index search leads directly to the page with all the row data.
+> 3. . All indexes other than the clustered index are known as [secondary indexes](https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_secondary_index).
 
-> #### InnoDB
+#### InnoDB
 >
 > 1. 默认主键为聚簇索引。
 >
@@ -73,9 +74,14 @@ sql_mod包含一个 `TRADITIONAL`, `STRICT_TRANS_TABLES`, `STRICT_ALL_TABLES`一
 >
 > 没有clustered index。
 
-[参考](https://web.archive.org/web/20200602095140/https://www.guru99.com/clustered-vs-non-clustered-index.html)
+### 其他
+
+- `B-tree`vs`binary-tree`: the *B* stands for: *Boeing*, *balanced*, *broad*, *bushy*, and *Bayer* have been suggested(wiki).
 
 ----
 
 [^覆盖索引]: Covering Index， an index that contains all of, and possibly more, the columns you need for your query.
+
+[^聚簇索引vs非聚簇索引]: https://web.archive.org/web/20200602095140/https://www.guru99.com/clustered-vs-non-clustered-index.html
+[^ B树 MySQL InnoDB MyASIM]: https://web.archive.org/web/20200426152916/http://blog.codinglabs.org/articles/theory-of-mysql-index.html 
 
