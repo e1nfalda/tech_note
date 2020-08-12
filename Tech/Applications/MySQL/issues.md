@@ -73,7 +73,7 @@ sql_mod包含一个 `TRADITIONAL`, `STRICT_TRANS_TABLES`, `STRICT_ALL_TABLES`一
 >
 > 没有clustered index。
 
-
+[参考](https://web.archive.org/web/20200602095140/https://www.guru99.com/clustered-vs-non-clustered-index.html)
 
 ----
 
