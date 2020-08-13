@@ -63,6 +63,7 @@ final, static, abstract,synchronous,volatile,transient
 
 ### 类型
 
+
 #### 内置
 
 - **byte**: 8bit.
@@ -83,8 +84,9 @@ final, static, abstract,synchronous,volatile,transient
 
 #### 引用变量
 
-> 1. Array、Object等。
-> 2. default null。
+> - Array、Object等。
+>
+> - default null。
 
 ### 常量
 
@@ -151,6 +153,22 @@ switch (EXPRESSION) {  // EXPRESS: 数字类型/char。SE>7支持String。
 }
 ```
 
+### 继承
+
+`extends`、`implements`
+
+**单继承**
+
+`super`
+
+`this`
+
+#### 构造方法
+
+- 方法名同类名的方法。
+- 会默认调用无参数的父类。
+- 
+
 
 -----
 
@@ -168,3 +186,6 @@ byte,short,char—> int —> long—> float —> double
 
    ![JVM Memory structure](./src/8uh8SPy.png)
 
+
+
+[https://baidu.com]: 
