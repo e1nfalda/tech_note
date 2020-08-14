@@ -155,19 +155,23 @@ switch (EXPRESSION) {  // EXPRESS: 数字类型/char。SE>7支持String。
 
 ### 继承
 
-`extends`、`implements`
-
 **单继承**
+
+`extends`、`implements`
 
 `super`
 
 `this`
 
+`final`
+
 #### 构造方法
 
 - 方法名同类名的方法。
+
 - 会默认调用无参数的父类。
-- 
+
+  
 
 
 -----
