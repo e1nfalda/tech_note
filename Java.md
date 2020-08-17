@@ -168,10 +168,15 @@ switch (EXPRESSION) {  // EXPRESS: 数字类型/char。SE>7支持String。
 #### 构造方法
 
 - 方法名同类名的方法。
-
 - 会默认调用无参数的父类。
 
-  
+### package
+
+`import package[.package...].[className|*]`
+
+`package com.package.fileName` => path:*com/package/fileName.java*
+
+
 
 
 -----
