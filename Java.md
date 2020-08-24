@@ -170,6 +170,12 @@ switch (EXPRESSION) {  // EXPRESS: 数字类型/char。SE>7支持String。
 - 方法名同类名的方法。
 - 会默认调用无参数的父类。
 
+### 范型（generics）
+
+#### 范型方法
+
+#### 范型类
+
 ### package
 
 `import package[.package...].[className|*]`
