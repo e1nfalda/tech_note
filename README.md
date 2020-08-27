@@ -10,15 +10,7 @@
 6. 对人的态度
 ### Fragment
 
-#### golang booklist
-
-good_:作者：飞雪无情  
-链接：https://www.zhihu.com/question/30461290/answer/210414739  
-来源：知乎  
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。  
-
-
-
+#### golang booklist [🔗](https://www.zhihu.com/question/30461290/answer/210414739 )
 基础推荐官方文档，没有什么比这个更清晰了。官方文档可以看这个中文的，比较快一些 [https://go-zh.org/doc/](https://go-zh.org/doc/)
 
 其次参考这个Go指南，练习一遍 [https://tour.go-zh.org/welcome/1](https://tour.go-zh.org/welcome/1)

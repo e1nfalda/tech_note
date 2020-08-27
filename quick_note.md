@@ -7,5 +7,3 @@
 ```sh
 awk 'FNR>=20 && FNR<=40' file_name
 ```
-
-### 
