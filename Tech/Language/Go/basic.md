@@ -1,3 +1,4 @@
+
 # Golang 语法
 
 ### go get
@@ -144,7 +145,7 @@ func d() {
    for {
      func () {
         f := os.File("...")
-     	defer f.close()
+     	 defer f.close()
      }()
    }
    ```

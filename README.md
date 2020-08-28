@@ -8,6 +8,9 @@
 ### 4. 思维跳跃性
 5. 对观点的态度
 6. 对人的态度
+
+
+
 ### Fragment
 
 #### golang booklist [🔗](https://www.zhihu.com/question/30461290/answer/210414739 )

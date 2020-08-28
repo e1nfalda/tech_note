@@ -1,5 +1,4 @@
 
-
 ### GC
 
 golang使用的[三色标记法](http://legendtkl.com/2017/04/28/golang-gc/)
