@@ -1,3 +1,6 @@
+---
+modified: 2020-08-29T09:43:24+08:00
+---
 
 # Golang 语法
 
@@ -135,13 +138,13 @@ func d() {
 2. `defer` in loop
 
    ```go
-   // ❗如果f是比较大结构会占用大量栈空间。
+   // :heavy_exclamation_mark:如果f是比较大结构会占用大量栈空间。
    for {
      f := os.File("...")
      defer f.close()
    }
    
-   // ✅ 匿名函数结束后就可以尽快释放空间。
+   // :white_check_mark: 匿名函数结束后就可以尽快释放空间。
    for {
      func () {
         f := os.File("...")
@@ -191,6 +194,7 @@ func d() {
 
 1. literals: `s := []int{1, 2, 3, 4}`.
 2. *null slice*: length is 0, capability is 0, no underlying array. 
+3. Slice [[Start]:[End]]. start ，end 正数，可为空。
 
 3. slice of slice: `[][]string{[]string{"a", "b"}, []string{"e", "f"}}`
 4. *append*: `append(s []T, vs ... T)`
@@ -405,7 +409,7 @@ func main() {
 
 ### Goroutines
 
-- ***gramma:***go f(x, y, z)
+- ***gramma:*** go f(x, y, z)
 
 - `sync` package provides methods  to accesses shared memory synchronized.
 
@@ -490,6 +494,3 @@ if reflect.ValueOf(e).Field(i).Kind() != reflect.Struct {
 ==type aliase==
 
 ---
-
-
-
