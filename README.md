@@ -1,4 +1,5 @@
-## note
+note
+
 [quick note](./quick_note.md)
 
 ### moto 

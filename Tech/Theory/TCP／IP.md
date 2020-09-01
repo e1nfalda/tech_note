@@ -32,8 +32,8 @@
 ​	![tcpfsm图](../.././src/tcpfsm.png)
 
 - **SYN超时**：server收到SYN返回SYN-ACK后，等待client发送SYN状态时，发送$2^n$(0-4) 秒间隔五次后未收到响应。
-- **SYN FLOOD攻击: ** 因为需要63（1+2+…16）秒所以利用该点，无线发送SYN请求。
-- **ISN(初始化序列号): **  未避免序号出现重复。系统有模拟时钟，每4微秒+1操作，$2^{32}$秒归0。
+- **SYN FLOOD攻击:** 因为需要63（1+2+…16）秒所以利用该点，无线发送SYN请求。
+- **ISN(初始化序列号):**  未避免序号出现重复。系统有模拟时钟，每4微秒+1操作，$2^{32}$秒归0。
 - **MSL(maxium segment lifecycle)**:当小于$2^{32}$秒时就不会出现重复序号。
 
 ## TCP重传机制
@@ -59,7 +59,7 @@
 
 ### 超时重传 （timeout retransmit）
 
-​      **RTT（Round Trip Time）：**发出的时间计时t0，接收到ACK计时t1；rtt=t1-t0。
+​      **RTT(Round Trip Time):**发出的时间计时t0，接收到ACK计时t1；rtt=t1-t0。
 
 ​      **RTO(Retransmission Time Out)**：加权移动算法（经典，Jacobson / Karels 算法 常用）
 
@@ -124,7 +124,7 @@
 
 ## 网络帧：
 
-###协议格式: SRC_ADDR | DESC_ADDR | CONTENT_PROTOCOL | CONTENT
+### 协议格式: SRC_ADDR | DESC_ADDR | CONTENT_PROTOCOL | CONTENT
 
 >  每个硬件和硬件的传播叫hop，链路层的一次传播为1hop，一次网络层传输可能有多个hop传输。
 
