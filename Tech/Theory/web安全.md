@@ -22,9 +22,9 @@
 
 #### jsonp
 
-**原理 **：利用`<script src>`标签可以跨域[^jsonp]cross-origin embedding。
+**原理 **：利用`<script .src>`标签可以跨域[^jsonp]cross-origin embedding。
 
-> `<img src=>`,`<like href= />`,`<script src= ></script>`,`<iframe src=></iframe>`等有*src*的标签(cross-origin embedding).
+> `<img .src=>`,`<like href= />`,`<script src= ></script>`,`<iframe src=></iframe>`等有*src*的标签(cross-origin embedding).
 
 **要点**
 

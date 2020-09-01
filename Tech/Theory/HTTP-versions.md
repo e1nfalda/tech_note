@@ -2,11 +2,11 @@
 
 ### 结构
 
-![http请求结构](../.././src/http-request.png)
+![http请求结构](../.././.src/http-request.png)
 
-![http响应结构](../.././src/http_response.jpg)
+![http响应结构](../.././.src/http_response.jpg)
 
-![https流程图](../.././src/http-https.png)
+![https流程图](../.././.src/http-https.png)
 
 ### HTTP/0.9
 
