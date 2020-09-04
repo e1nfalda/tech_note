@@ -405,10 +405,7 @@ func main() {
   f, _ := t.FieldByName("field")
   f.Tag.Lookup(key string) (string, bool)/f.Tag.Get(key string) string() 
   ```
-
-
 ### Goroutines
-
 - ***gramma:*** go f(x, y, z)
 
 - `sync` package provides methods  to accesses shared memory synchronized.
@@ -445,24 +442,6 @@ for {
 - `sync.Mutex.Lock`
 - `sync.Mutex.Unlock`
 
-
-
-
-
-os.Args,
-
- os.Open(),op.Create, os.OpenFile(), os.Close():
-
-sync.WaitGroup  wg.Add, wg.Wait
-
-sync.Lock, sync.Unlock
-
-%t : Boolean
-
-%T: typeof
-
-%e, %f: float
-
 ### channel
 
 make (chan val-type, buffer_size)
@@ -489,8 +468,43 @@ if reflect.ValueOf(e).Field(i).Kind() != reflect.Struct {
 }
 ```
 
+### context
+
+> 并发编程中常用到一种编程模式.上下文模式.
+
+- 线程安全。
+
+```go
+type Context interface {
+    Done() <-chan struct{}	// 当canceled、timeout 返回 channel
+    Deadline() (deadline time.Time, ok bool) // 
+    Err() error // 返回error
+    Value(key interface{}) interface{} // 存储key-value值。
+}
+func Background() Context // 无timeout、cancelFunc，主要main、init、test、top level
+
+func WithDeadline(parent Context, deadline time.Time) (Context, CancelFunc)
+func WithCancel(ctx Context, cancel CancelFunc) // type CancelFunc func()
+func WithTimeout(parent Context, timeout time.Duration) (Context, CancelFunc)
+func WithValue(parent Context, key interface{}, val interface{}) Context
+```
+
 
 
 ==type aliase==
 
 ---
+
+os.Args,
+
+ os.Open(),op.Create, os.OpenFile(), os.Close():
+
+sync.WaitGroup  wg.Add, wg.Wait
+
+sync.Lock, sync.Unlock
+
+%t : Boolean
+
+%T: typeof
+
+%e, %f: float
