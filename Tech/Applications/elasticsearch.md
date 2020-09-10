@@ -1,18 +1,22 @@
-| ES | Index（type） | document | field  | schema | DSL |
+------------
+
+| ES | Index（type） | document | field  | mapping | DSL |
 |:-:|---|:-:|---|---|---|
-| RDBMS | database | row      | column | mapping | SQL |
+| RDBMS | database | row      | column | schema | SQL |
 
-### 反向索引
+### ==反向索引==
 
-### beatmap
 
-### Mapping: 
+
+### ==bitmap==
+
+### ==Mapping==: 
 
  process of defining how a document, and the fields it contains, are stored and indexed.
 
-#### MetaFields
+#### ==MetaFields==
 
-Meta-fields are used to customize how a document’s metadata associated is treated.
+MetaFields are used to customize how a document’s metadata associated is treated.
 
 > 1. 针对整个document的设置。类似RDBMS的表属性。
 

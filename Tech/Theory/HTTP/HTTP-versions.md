@@ -2,11 +2,9 @@
 
 ### 结构
 
-![http请求结构](../.././.src/http-request.png)
+![http响应结构](../../.././.src/http_response.jpg)
 
-![http响应结构](../.././.src/http_response.jpg)
-
-![https流程图](../.././.src/http-https.png)
+![https流程图](../../.././.src/http-https.png)
 
 ### HTTP/0.9
 
@@ -48,10 +46,10 @@
 
 ### HTTP/2
 
-- 二进制协议。协议头也可以是二进制。
+- 二进制协议。协议头也可以是二进制。*不明文，*
 - Multiplexing（多工/多路复用）。
 - 数据流。不同于`chunked transfer encoding`机制。通过每个包都有一个ID区分哪个请求。可以中断单个流；指定流优先级。
-- 头部压缩。
+- 头部压缩。(HPACK)
 - 服务端推送Server Push。
 
 ---
