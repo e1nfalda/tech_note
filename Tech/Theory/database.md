@@ -24,11 +24,11 @@
 
 游标只针对
 
-分类：是否==敏感的asensitive==，==不敏感==
+分类：==不敏感==
 
 *mysql游标为敏感类型：复制到tempdb，如果超过table内存限制，则创建mysiam表*.
 
-[mysql tutoral](https://web.archive.org/web/20191205204618/https://dev.mysql.com/doc/refman/5.7/en/cursor-restrictions.html)
+[mysql官方手册](https://web.archive.org/web/20191205204618/https://dev.mysql.com/doc/refman/5.7/en/cursor-restrictions.html)
 
 ### 临时表
 存储在tempdb中的表。
@@ -67,10 +67,17 @@ ACID
 
 事务处理结束后，对数据的修改就是永久的，即便系统故障也不会丢失。
 
+### mysql 锁
 
+![image-20200910204615488](../../.src/image-20200910204615488.png)
 
 -------------
 
-**Data retrieval**： means obtaining data from a database management system such as ODBMS. In this case, it is considered that data is represented in a structured way, and there is no ambiguity in data.
+==Data retrieval==： means obtaining data from a database management system such as ODBMS. In this case, it is considered that data is represented in a structured way, and there is no ambiguity in data.
 
-**CRUD**：Acronym for “create, read, update, delete”
+==CRUD==：Acronym for “create, read, update, delete”
+
+---------------
+
+[^一张图彻底搞懂 MySQL 的锁机制]: https://learnku.com/articles/39212?order_by=vote_count&
+
