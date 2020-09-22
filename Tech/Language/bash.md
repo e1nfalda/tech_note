@@ -1,8 +1,8 @@
 ## bash
 
-### sed&pear (in-place substitution/原地替换)
+### sed&pear (in-place substitution/原地替换)
 
-1. ``` sed -i "" 's/old_string/new_string/g'  \`grep old_string -rl ./ | grep -vE "tags|svn"\` ```     //特殊要求的替换：此命令中要求过滤掉含有tags和svn的文件。mac 版本-i  *extension* ,以*extension*为后缀保存原文件。
+1. ``` sed -i "" 's/old_string/new_string/g'  \`grep old_string -rl ./ | grep -vE "tags|svn"\` ```     //特殊要求的替换：此命令中要求过滤掉含有tags和svn的文件。mac 版本-i  *extension* ,以*extension*为后缀保存原文件。
   >如果文件尾部没有换行符，sed会默认加上，所以该方案不是好的方案。
 
 2. `perl -i [extension] -pe 's/STRING/REPLACEMENT/'`perl版本，避免尾部换行符问题。
@@ -104,17 +104,17 @@
 - 变量拓展：${},${!S}扩展为所有。可嵌套,${X, ${b}}.
 - 子命令：$(date).可嵌套（旧的不去写法`date`）。
 - 算数扩展$((1+2))。
-- 自负类:[[:class:]],class如alpha，upper，blank，digit, graph(a-z,A-Z,1-9),upper（A-Z）,xdigit(16进制)等
+- 自负类:[[:class:]],**class**如`alpha`，`upper`，`blank`，`digit`,` graph`(a-z,A-Z,1-9),`upper`（A-Z）,`digit`(16进制)等
 
 特殊变量
 
 脚本文件内部，可以使用特殊变量，引用这些参数。
 
-- $0：脚本文件名，即script.sh。
+- `$0`：脚本文件名，即script.sh。
 - `$1`-`$9`：对应脚本的第一个参数到第九个参数。
-- $#：参数的总数(数字)。
-- $@：全部的参数，参数之间使用空格分隔。
-- $*：全部的参数，参数之间使用变量$IFS值的第一个字符分隔，默认为空格
+- `$#`：参数的总数(数字)。
+- `$@`：全部的参数，参数之间使用空格分隔。
+- `$*`：全部的参数，参数之间使用变量$IFS值的第一个字符分隔，默认为空格
 
 ### Bash
 
@@ -159,4 +159,10 @@
    >克林闭包（Kleene star or Kleene operator or Kleene closure）：R*语法。
    >
    >即a\*	表示:a, aa, aaa
+
+-----
+
+1. 打印文件第m-n行。
+
+   `awk 'FNR>=20 && FNR<=40' file_name`
 

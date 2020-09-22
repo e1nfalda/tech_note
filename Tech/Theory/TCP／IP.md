@@ -1,5 +1,13 @@
 # 网络协议
 
+> 以太包size: 1500 bit*payload*+22bit *head* = 1522 （最初共1518）
+>
+> ip包：1480 + 20
+>
+> tcp包：1480 - 1420
+>
+> http包：HTTP/2 协议的一大改进， 就是压缩 HTTP 协议的头信息，使得一个 HTTP 请求可以放在一个 TCP 数据包里面
+
 ## 分层(tcp/ip 5层,OSI 7层)：
 
 ![net_protocols](../.././.src/net_protocols.png)
@@ -74,11 +82,11 @@
 	>
 	> β 值一般在1.3到2.0之间。
 	>
-	>### Karn / Partridge 算法：
+	>#### Karn / Partridge 算法：
 	> 
 	>​	忽略重传。
 	> 
-	>### jacobson/karels 算法：
+	>#### jacobson/karels 算法：
 	>
 	>- SRTT = SRTT + α (RTT – SRTT) ：计算平滑RTT；
 	>- DevRTT = (1-β)*DevRTT + β*(|RTT-SRTT|) ：计算平滑RTT和真实的差距（加权移动平均）；
@@ -100,12 +108,17 @@
 3. 拥塞发生（fast retransmit）。当出现RTO超时，sshthresh=cwnd/2进入慢启动过程。`fast retransmit`重复3个ACK时，进入Fast-Recovery算法。
 4. 快速恢复。
 
-> 四个算法通过是否丢包、是否超时判断在哪个阶段，今儿选择响应的算法。
-
+> 四个算法通过是否丢包、是否超时判断在哪个阶段，进而选择响应的算法。
 
 
 
 ### 流量控制（flow control）
+
+> **ACK** 一般当receiver收到两个包后发送ACk。主要包含：
+>
+> 1. 期待要收到下一个数据包的编号.
+> 2. 接收方的接收窗口的剩余容量
+
 **slide window(advertised window,rwnd)**
 
 > receiver维护。
@@ -137,3 +150,4 @@
 [深入理解TCP协议（上）：理论基础](http://www.52im.net/thread-513-1-1.html)
 [深入理解TCP协议（下）：理论基础](http://www.52im.net/thread-515-1-1.html)
 
+[阮一峰：TCP 协议简介](http://www.ruanyifeng.com/blog/2017/06/tcp-protocol.html)
