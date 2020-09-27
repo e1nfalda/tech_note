@@ -1,7 +1,5 @@
 # note
 
-[toc]
-
 ### moto
 
 1. 元认知（metacongnition）

@@ -48,7 +48,7 @@ func main() {
 	f(a...)
 }
 
-// cannot use a (type []string) as type []interface {} in argument to f
+// ❌ cannot use a (type []string) as type []interface {} in argument to f
 
 ```
 
@@ -65,3 +65,37 @@ func main() {
 [string to interface{}](https://stackoverflow.com/questions/27689058/convert-string-to-interface)
 
 https://golang.org/doc/faq#convert_slice_of_interface
+
+
+
+### new vs make
+
+两者都是在堆上分配。
+
+`new`: `new(Type) *Type`分配内存初始化(置0)变量并返回变量指针。`Type`类型 int，type定义struct等。
+
+`make`: make(Type, args...) Type  初始化变量返回变量。针对类型 slice, map,channel。因为类型本身是引用类型，没必要返回指针。
+
+````go
+// ❌ 编辑错误
+...
+var i *int
+*int = 10 
+
+// ✅ new初始化int内存，并返回
+...
+var i *int = new(int)
+*i = 10 
+
+// ✅ new初始化struct，并返回对应指针
+type user struct {
+	name string
+}
+func main() {
+	u := new(user)
+	u.name = "wong"
+	fmt.Println("Hello, playground", u) // 
+}
+
+````
+

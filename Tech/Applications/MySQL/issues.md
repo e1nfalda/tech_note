@@ -1,6 +1,4 @@
-### 问题
-
-#### MySQL不可以一条语句update select同一个表。
+#### MySQL不可以一条语句update select同一个表。（sqlalchemy可以。）
 
 >The reason for this error is that MySQL doesn’t allow updates to a table when you are also using that same table in an inner select as your update criteria. The article goes on to provide a solution, which is to use a temporary table.
 
@@ -33,15 +31,16 @@ Server SQL modes define what SQL syntax MySQL should support and what kind of da
 1. 不同的mode下对sql语法的校验规则不同。如对autoincrement属性插入值是否、not null字段不能为空等的校验反馈不同。有的事warning、有的是直接Error。
 2. 一般在测试环境下使用严格模式。
 3. sql_mode属性可以动态修改，但可能会引起数据丢失或损坏（loss or corruption of data）。
-4. 可以设置为`global`， `session`。
+4. 场景：`global`， `session`。
+5. 查询sql_mode状态：
 ```mysql
 // 查询
 SELECT @@GLOBAL.sql_mode; 
 SELECT @@SESSION.sql_mode;
+SELECT @@sql_mode
 ```
-5. SELECT @@sql_mode
-
 #### strict_mode
+
 sql_mod包含一个 `TRADITIONAL`, `STRICT_TRANS_TABLES`, `STRICT_ALL_TABLES`一种以上设置。
 
 
