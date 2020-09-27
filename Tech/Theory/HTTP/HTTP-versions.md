@@ -2,9 +2,7 @@
 
 ### 结构
 
-![http响应结构](../../.././.src/http_response.jpg)
-
-![https流程图](../../.././.src/http-https.png)
+<img src="../../.././.src/http_response.jpg" alt="http响应结构" style="zoom:50%;" />
 
 ### HTTP/0.9
 
@@ -42,18 +40,19 @@
 - `Chunked transfer encoding`last-chunk：请求response结束位。[^chunked transfer encoding]
 - 引入PUT HEAD OPTIONS DELETE PATCH CONNECT TRACE
 - 引入Host。http/1.1必传，否则返回400。使1个IP下有多个服务器。
-- ["队头堵塞"](https://zh.wikipedia.org/wiki/队头阻塞)（Head-of-line blocking）
+- 队头阻塞[^Head-of-line blocking]：*http 协议会队头阻塞，tcp也有*
 
 ### HTTP/2
 
-- 二进制协议。协议头也可以是二进制。*不明文，*
+- 二进制协议。协议头也可以是二进制。*可以文本加密*
 - Multiplexing（多工/多路复用）。
 - 数据流。不同于`chunked transfer encoding`机制。通过每个包都有一个ID区分哪个请求。可以中断单个流；指定流优先级。
-- 头部压缩。(HPACK)
+- 头部压缩。*`HPACK`*
 - 服务端推送Server Push。
 
 ---
 
-[^media type]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types
-[^chunked transfer encoding]: wiki：https://en.wikipedia.org/wiki/Chunked_transfer_encoding
+[^media type]: 见文档 https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types
+[^chunked transfer encoding]: https://en.wikipedia.org/wiki/Chunked_transfer_encoding
+[^Head-of-line blocking]: HOL blocking https://en.wikipedia.org/wiki/Head-of-line_blocking
 

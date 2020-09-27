@@ -138,13 +138,13 @@ func d() {
 2. `defer` in loop
 
    ```go
-   // :heavy_exclamation_mark:如果f是比较大结构会占用大量栈空间。
+   // 如果f是比较大结构会占用大量栈空间。
    for {
      f := os.File("...")
      defer f.close()
    }
    
-   // :white_check_mark: 匿名函数结束后就可以尽快释放空间。
+   // 匿名函数结束后就可以尽快释放空间。
    for {
      func () {
         f := os.File("...")
@@ -234,7 +234,7 @@ func d() {
    }
    ```
 
-   2. closure
+2. closure
 
    ```go
    func main() {
@@ -488,7 +488,42 @@ func WithCancel(ctx Context, cancel CancelFunc) // type CancelFunc func()
 func WithTimeout(parent Context, timeout time.Duration) (Context, CancelFunc)
 func WithValue(parent Context, key interface{}, val interface{}) Context
 ```
+```go
+// demo
+func main() {
+    messages := make(chan int, 10)
 
+    // producer
+    for i := 0; i < 10; i++ {
+        messages <- i
+    }
+
+    ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+
+    // consumer
+    go func(ctx context.Context) {
+        ticker := time.NewTicker(1 * time.Second)
+        for _ = range ticker.C {
+            select {
+            case <-ctx.Done():
+                fmt.Println("child process interrupt...")
+                return
+            default:
+                fmt.Printf("send message: %d\n", <-messages)
+            }
+        }
+    }(ctx)
+
+    defer close(messages)
+    defer cancel()
+
+    select {
+    case <-ctx.Done():
+        time.Sleep(1 * time.Second)
+        fmt.Println("main process exit!")
+    }
+}
+```
 
 
 ==type aliase==
@@ -508,3 +543,7 @@ sync.Lock, sync.Unlock
 %T: typeof
 
 %e, %f: float
+
+```
+
+```

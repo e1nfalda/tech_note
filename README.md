@@ -1,6 +1,9 @@
-note
+# note
 
-### moto 
+[toc]
+
+### moto
+
 1. 元认知（metacongnition）
 2. 好奇心
 3. 简化问题。

@@ -1,6 +1,6 @@
 # 网络协议
 
-> 以太包size: 1500 bit*payload*+22bit *head* = 1522 （最初共1518）
+> 以太包size: 1500 bit*payload*+22bit *head* = 1522 （最初共1518）
 >
 > ip包：1480 + 20
 >
@@ -31,8 +31,11 @@
 ![Segment 结构图](../.././.src/134217wuckuyvvcsuygnds.png)
 
 - Sequence Number: 序列号;解决乱序问题。
-- Acknowledgement Number: ACK。用来确认收到。
+
+- Acknowledgement Number: ACK。用来确认收到。  [黄色字段ACK会传递的字段图](../../.src/image-20200925172720046.png)
+
 - Window(Advertised-Window):滑动窗口。流量控制。
+
 - TCP Flag: 包的类型。SYN,FIN,ACK…[详细](../.././.src/image-20190725155505155.png) 
 
 ## TCP状态机
@@ -46,7 +49,7 @@
 
 ## TCP重传机制
 
-> tcp协议未保证数据到达。主要两种
+两种情况会出发重传：`dupACK`和`RTO`.
 
 ### DupAck 重传
 
@@ -67,18 +70,20 @@
 
 ### 超时重传 （timeout retransmit）
 
-​      **RTT(Round Trip Time):**发出的时间计时t0，接收到ACK计时t1；rtt=t1-t0。
+​      **`RTT(Round Trip Time)`:**发出的时间计时t0，接收到ACK计时t1；rtt=t1-t0。
 
-​      **RTO(Retransmission Time Out)**：加权移动算法（经典，Jacobson / Karels 算法 常用）
+​      **`RTO(Retransmission Time Out)`**：冲出an
+
+加权移动算法（经典，Jacobson / Karels 算法 常用）
 
 >RTO计算算法:
 	>- 1）首先，先采样RTT，记下最近好几次的RTT值。
-	>- 2）然后做平滑计算SRTT（ Smoothed RTT），公式为：（其中的 α 取值在0.8 到 0.9之间，这个算法英文叫Exponential weighted moving average，中文叫：加权移动平均）
+	>- 2）然后做平滑计算`SRTT`（ Smoothed RTT），公式为：（其中的 α 取值在0.8 到 0.9之间，这个算法英文叫Exponential weighted moving average，中文叫：加权移动平均）
 	>  SRTT = ( α * SRTT ) + ((1- α) * RTT)
 	> - 3）开始计算RTO。公式如下：
 	>  RTO = min [ UBOUND,  max [ LBOUND,   (β * SRTT) ]  ]
-	> 1. UBOUND是最大的timeout时间，上限值
-	> 2.  LBOUND是最小的timeout时间，下限值
+	> 1. `UBOUND`是最大的timeout时间，上限值
+	> 2.  `LBOUND`是最小的timeout时间，下限值
 	>
 	> β 值一般在1.3到2.0之间。
 	>

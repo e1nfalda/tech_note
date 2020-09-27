@@ -1,0 +1,5 @@
+payload:
+  # > Apple API
+  - DOMAIN-SUFFIX,xueqiu.com
+  - DOMAIN-SUFFIX,stock360.cn
+  - DOMAIN-SUFFIX,zhihu.com
