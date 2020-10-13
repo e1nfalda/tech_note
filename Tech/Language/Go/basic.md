@@ -446,6 +446,12 @@ for {
 
 make (chan val-type, buffer_size)
 
+#### channel directions
+
+用来表示只能用来接收或者发送，错误用法将编译报错**。。`<-chan` `chan<-`。
+
+## Channel Directions
+
 #### select
 
 > `default`: 表示非阻塞。
