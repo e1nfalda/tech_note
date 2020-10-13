@@ -45,6 +45,30 @@
 
 > 规则与location 类似。
 
+### upstream
+
+#### 分配方法
+
+- 轮训。默认方式。
+- 加权轮训。`weight`。
+- `ip_hash`。 // 一致性哈希（round robin）
+- `url_hash`。使每个url定向到指定服务器。（*额外模块*）
+- `fair`。根据响应时间`rt`优先分配请求。（*额外模块*）
+
+```nginx
+upstream STREAM_NAME {
+    # 负载均衡方法不是默认的轮转法时，必须在keepalive 指令之前配置
+    [ip_hash;]  # 负载均衡策略。 使用映射。根据IP分配到制定的服务器. 默认是**轮转法**
+    [least_conn;] # 负载均衡策略。
+    [hash $request_uri; 
+    hash_method crc32; ]  # hash 算法
+        
+    server SERVER_ADDRESS [weight=WEIGHT], [max_fails=NUM, fail_timeout=];  # weight 权重； fail_timeout时间内如果失败max_fails次则认为服务器不可用。
+    server SERVER_ADDRESS [backup]; # backup 是否备用服
+    keepalive KEEP_ALIVE_NUM； # 保留keep alive 数量。对下流的数量限制，不对上流设置限制。 
+}
+```
+
 ### if 判断
 
 > ​	The only 100% safe things which may be done inside if in a location context are:
