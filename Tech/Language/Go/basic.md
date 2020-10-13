@@ -446,11 +446,9 @@ for {
 
 make (chan val-type, buffer_size)
 
-#### channel directions
+#### directions
 
 用来表示只能用来接收或者发送，错误用法将编译报错**。。`<-chan` `chan<-`。
-
-## Channel Directions
 
 #### select
 
@@ -468,18 +466,13 @@ select {
 
 #### 关闭
 
-```go
-if reflect.ValueOf(e).Field(i).Kind() != reflect.Struct {
-    fmt.Println(reflect.ValueOf(e).Field(i))
-}
-```
+`close(CHANNEL)`
 
 ### context
 
-> 并发编程中常用到一种编程模式.上下文模式.
+> 并发编程中常用到一种编程模式.上下文模式.线程安全。
 
-- 线程安全。
-
+#### 语法
 ```go
 type Context interface {
     Done() <-chan struct{}	// 当canceled、timeout 返回 channel
@@ -494,8 +487,8 @@ func WithCancel(ctx Context, cancel CancelFunc) // type CancelFunc func()
 func WithTimeout(parent Context, timeout time.Duration) (Context, CancelFunc)
 func WithValue(parent Context, key interface{}, val interface{}) Context
 ```
+#### demo
 ```go
-// demo
 func main() {
     messages := make(chan int, 10)
 
@@ -531,8 +524,7 @@ func main() {
 }
 ```
 
-
-==type aliase==
+### type aliase
 
 ---
 
@@ -550,6 +542,3 @@ sync.Lock, sync.Unlock
 
 %e, %f: float
 
-```
-
-```

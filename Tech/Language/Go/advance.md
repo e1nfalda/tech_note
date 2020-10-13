@@ -34,7 +34,12 @@ type Pointer *ArbitraryType
 >
 > 反射的流程是把
 
-
+```go
+// demo
+if reflect.ValueOf(e).Field(i).Kind() != reflect.Struct {
+    fmt.Println(reflect.ValueOf(e).Field(i))
+}
+```
 
 ### golang unpack时不能传递给interface{}类型参数
 
