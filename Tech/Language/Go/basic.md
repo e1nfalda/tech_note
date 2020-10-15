@@ -410,33 +410,6 @@ func main() {
 
 - `sync` package provides methods  to accesses shared memory synchronized.
 
-#### Channels
-
-- ***gramma:***
-
-  ```go
-  ch <- v // Send v to channel ch.
-  v := <-ch // Receive from ch, and assign value to v
-  ch := make(chan int)  // create channel
-  ```
-
-#### select
-
-Blocks util one of its cases can run.use a `default` case to try a send or receive without blocking;
-
-```go
-for {
-  select {
-    case c <- x:
-    	...
-    case <-quit:
-    	return
-    default:  // 无defalt为阻塞；有则为非阻塞。
-     time.Sleep(500 * time.Millisecond)
-  }
-}
-```
-
 #### Mutex (mutual exclusion) 互斥
 
 - `sync.Mutex.Lock`
@@ -444,21 +417,45 @@ for {
 
 ### channel
 
-make (chan val-type, buffer_size)
+**make (chan val-type, [buffer_size=0])**
+
+> *buffer_size* 缺省是0.当*buffer_size*使用完后线程就会堵塞至chan被读取（[buffer_size stackoverflow](https://stackoverflow.com/a/11943866)）。
+
+#### gramma
+
+  ```go
+ch <- v // Send v to channel ch.
+v[, closed] := <-ch // Receive from ch, and assign value to v
+ch := make(chan int)  // create channel
+
+for v := range ch {
+    ...
+}
+  ```
+
+
 
 #### directions
 
 用来表示只能用来接收或者发送，错误用法将编译报错**。。`<-chan` `chan<-`。
 
+- 无direction的可以转为direction的，但无法反过来
+
+  > ch := make(chan int)
+  >
+  > directionCh := (chan<-)(ch) // ✅
+  >
+  > （chan int)(directionCh)  // ❌
+
 #### select
 
-> `default`: 表示非阻塞。
+> `default`: 表示非阻塞。*Blocks util one of its cases can run.use a `default` case to try a send or receive without blocking;*
 
 ```go
 select {
     case var1 <- chan1:
     	...
-    default:
+    default: // 无defalt为阻塞；有则为非阻塞。
     	...
 }
 
@@ -542,3 +539,8 @@ sync.Lock, sync.Unlock
 
 %e, %f: float
 
+----------------------
+
+1.5前默认单内核运行。1.5后会根据内核数运行。
+
+https://stackoverflow.com/questions/17853831/what-is-the-gomaxprocs-default-value
