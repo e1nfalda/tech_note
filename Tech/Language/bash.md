@@ -178,4 +178,4 @@
 
 1. 打印文件第m-n行。
    
-   `awk 'FNR>=20 && FNR<=40' file_name`
+   `awk 'FNR>=20 && FNR<=40' file_name`I
