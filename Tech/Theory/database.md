@@ -1,3 +1,6 @@
+:DBMS:
+
+
 ## DBMS
 
 ![DBMS名词](../../.src/image-20200804140626503.png)
@@ -68,6 +71,8 @@ ACID
 事务处理结束后，对数据的修改就是永久的，即便系统故障也不会丢失。
 
 ### mysql 锁
+:lock:
+
 
 ![image-20200910204615488](../../.src/image-20200910204615488.png)
 
@@ -81,3 +86,13 @@ ACID
 
 [^一张图彻底搞懂 MySQL 的锁机制]: https://learnku.com/articles/39212?order_by=vote_count&
 
+
+# Generated Tags
+
+## DBMS
+
+- [Tech/Theory/database](Tech/Theory/database)
+
+## lock
+
+- [mysql 锁](Tech/Theory/database#DBMS#mysql 锁)
