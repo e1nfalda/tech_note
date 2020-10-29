@@ -12,10 +12,11 @@
 # GTD
 
   1. [○] [golang](golang)
-  2. [✗] [vim mode and key mapping](#vip tips)
+  2. [✗] [k8s入门](k8s入门)
   3. [✗] [[#vim tips|vim mode and key mapping]]
 
 # Tips
+
 ## vim tips
   vim-modes: `normal`, `command`, `insert`, `visual`, `select`
     `visual` vs `select`: 
