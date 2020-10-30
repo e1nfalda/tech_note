@@ -1,11 +1,17 @@
 ## golang
 
-* [] 基础
+* 基础
+  
   * []基础推荐官方文档，没有什么比这个更清晰了。官方文档可以看这个中文的，比较快一些 [https://go-zh.org/doc/](https://go-zh.org/doc/)
+  
   * []参考这个Go指南，练习一遍 [https://tour.go-zh.org/welcome/1](https://tour.go-zh.org/welcome/1)
+  
   * []Go语言圣经中文版 [https://www.gitbook.com/book/yar999/gopl-zh/details](https://www.gitbook.com/book/yar999/gopl-zh/details)
+    
     > 现在对Go语言应该有了一个全面的认识，然后你再结合Go语言圣经这本书，深入理解Go的基础。
+
 * 进阶
+  
   * [Go语言开发环境搭建详解](http://www.flysnow.org/2017/01/05/install-golang.html)
   * [Go语言实战笔记（一）| Go包管理](http://www.flysnow.org/2017/03/04/go-in-action-o-package.html)
   * [Go语言实战笔记（五）| Go 切片](http://www.flysnow.org/2017/03/14/go-in-action-go-slice.html)
@@ -14,7 +20,9 @@
   * [Go语言实战笔记（二十）| Go Context](http://www.flysnow.org/2017/05/12/go-in-action-go-context.html)
   * [Go语言实战笔记（二十四）| Go 反射](http://www.flysnow.org/2017/06/13/go-in-action-go-reflect.html)
   * [Go语言实战笔记（二十六）| Go unsafe 包之内存布局](http://www.flysnow.org/2017/07/02/go-in-action-unsafe-memory-layout.html)
+
 * 最终再通过一些别的第三方库源代码和实践，就可以完全掌握了。我最近也在分析一些经典库，可以保持关注：
+  
   * [Go语言经典库使用分析（一）| 开篇](http://www.flysnow.org/2017/07/26/go-classic-libs-start.html)
   * [Go语言经典库使用分析（二）| Gorilla Context](http://www.flysnow.org/2017/07/29/go-classic-libs-gorilla-context.html)
   * [Go语言经典库使用分析（三）| Gorilla Handlers 详细介绍](http://www.flysnow.org/2017/08/06/go-classic-libs-gorilla-handlers-guide.html)
@@ -32,7 +40,9 @@
   * [Golang Gin 实战（六）| 获取Form表单参数和原理分析](https://mp.weixin.qq.com/s/Eb1r48h3pcIw_aa3_bLhuQ)
   * [Golang Gin 实战（七）| 分组路由源代码分析 - 飞雪无情的博客](https://www.flysnow.org/2019/12/25/golang-gin-group-router.html)
   * [Golang Gin 实战（八）| JSON渲染输出 - 飞雪无情的博客](https://www.flysnow.org/2019/12/29/golang-gin-json-rendering.html)
+
 * 基础进阶
+  
   * [一个简单的Golang实现的HTTP Proxy](http://www.flysnow.org/2016/12/24/golang-http-proxy.html)
   * [一个简单的Golang实现的Socket5 Proxy](http://www.flysnow.org/2016/12/26/golang-socket5-proxy.html)
   * [GitHub上优秀的Go开源项目](http://www.flysnow.org/2016/12/27/golang-hot-project-in-github.html)
