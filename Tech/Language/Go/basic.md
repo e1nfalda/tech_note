@@ -49,74 +49,87 @@ const (
 
 1. *initial statement* and *post statment* can be omited.  
 
-   ```go
-   for [i := 1;] i < 10 [; i ++] {
+    ```go
+    for [i := 1;] i < 10 [; i ++] {
        // todo
-   } 
-   ```
+    } 
+    ```
 
 2. act as **while**
 
-   ``` go
-   for x < 100 {
+    ``` go
+    for x < 100 {
        // todo
-   }
-   ```
+    }
+    ```
 
 3. forever Loop
 
-   ```go
-   for {
+    ```go
+    for {
        // todo
-   }
-   ```
+    }
+    ```
+4. for range
+5. 
+    ```go
+    for index[, value] := List {
+      // todo
+    }
+    ```
+    **traps: `for range` 对value 是一个用来循环的新变量，如需在后续调用需要新赋值.**
+    ```go
+    for index, value := range {
+      defer f() {fmt.Println(value)}
+    }
+    ```
 
 ### if
 
 1. can start with short statment；
 
-   ```go
-   /* short statment x:= 10, 变量x的作用域仅在 if作用域内 */
-   if x := 10; x > y {
+    ```go
+    /* short statment x:= 10, 变量x的作用域仅在 if作用域内 */
+    if x := 10; x > y {
        // todo
-   }
-   ```
+    }
+    ```
 
 2. 格式。
 
-   ```go
-   if Expresion {
+    ```go
+    if Expresion {
        ...
-   } else {
+    } else {
        ...
-   }
-   ```
+    }
+    ```
 
 ### switch
 
 1. short statment.
 
-   ```go
-   switch os := runtime.GOOS; os {
-   case "linux":
+    ```go
+    switch os := runtime.GOOS; os {
+    case "linux":
      /* case 锁紧和switch同行 */
      ...
      /* 默认系统会加 break */
-   } 
-   ```
+    } 
+    ```
 
 2. with no condition
 
-   ```go
-   switch {
-   case t.Hour() > 10:
+    ```go
+    switch {
+    case t.Hour() > 10:
    	...
-   case t.Hour() > 20:
+    case t.Hour() > 20:
    	...
-   default:
+    default:
    	...
-   }
-   ```
+    }
+    ```
 
 ### defer
 
@@ -127,31 +140,31 @@ const (
 > 函数语句（defer函数的param传递生成） ---> return语句 ---> defer lastInFunc -> defer firstInFunc -> return值 
 
 1. execute sequence.FILO
-   ```go
+    ```go
 func d() {
     defer Expression1;
     defer Expreesion2;
     // stacking defer, 先执行Expression2，再执行Expression1；
 }
-   ```
+    ```
 
 2. `defer` in loop
 
-   ```go
-   // 如果f是比较大结构会占用大量栈空间。
-   for {
+    ```go
+    // 如果f是比较大结构会占用大量栈空间。
+    for {
      f := os.File("...")
      defer f.close()
-   }
+    }
    
-   // 匿名函数结束后就可以尽快释放空间。
-   for {
+    // 匿名函数结束后就可以尽快释放空间。
+    for {
      func () {
         f := os.File("...")
      	 defer f.close()
      }()
-   }
-   ```
+    }
+    ```
    
 3.  A deferred function's arguments are evaluated when the defer statement is evaluated.
 
@@ -165,28 +178,28 @@ func d() {
 
 4. Deferred functions may read and assign to the returning function's named return values.
 
-   ```go
-   func c() (i int) {
+    ```go
+    func c() (i int) {
        defer func() { i++ }()
        return 1
-   }
-   // 最终返回的i值为： 2
-   ```
+    }
+    // 最终返回的i值为： 2
+    ```
 
    
 
 5. `defer` with `panic`。defer可以在Panic后执行。
 
-   ```go
-   defer func() { 
+    ```go
+    defer func() { 
      if r := recover(); r!=nil { // recover 类似于异常被catch，上一级的flow正常执行。
        ...
      }
      panic("raise a Panic")
      ... // 不会被执行到的代码
-   }
-   // Panic 被Recover后，会继续执行流程。打印: continue...
-   ```
+    }
+    // Panic 被Recover后，会继续执行流程。打印: continue...
+    ```
 
    
 
@@ -210,12 +223,12 @@ func d() {
 
 2. literals 2:
 
-   ```go
-   map[string]Vertex {
+    ```go
+    map[string]Vertex {
        "vertex1": Vertex{1, 2},
        "vertex2": Vertex{3, 4},
-   }
-   ```
+    }
+    ```
 3. `delete(Map, Key)` if Key not in Map, then no op.
 
 4. two-value assignments. `v, ok := Map[Key]` 如果`Key`不存在ok=false,否则ok=true。
@@ -224,26 +237,26 @@ func d() {
 
 1. function as variables.
 
-   ```go
-   func varF(x, y int) int {
+    ```go
+    func varF(x, y int) int {
        return x * y
-   }
-   func main() {
+    }
+    func main() {
        f := varF
        f(1, 2)
-   }
-   ```
+    }
+    ```
 
 2. closure
 
-   ```go
-   func main() {
+    ```go
+    func main() {
        x := 1
        func () { // closure function need anonymous function?
            fmt.Println("x", x)
    	}()
-   }
-   ```
+    }
+    ```
 
 ### struct
 
@@ -280,7 +293,7 @@ func main() {
 
 1. can only declare a method with a receiver whose type is defined in the same package as the method.
 
-   eg. `type myInt int`才可以定义method。~~(p int)FooFuc(){}~~错误。
+    eg. `type myInt int`才可以定义method。~~(p int)FooFuc(){}~~错误。
 
 2. **value receiver** operate on copy of value.
 
@@ -290,32 +303,31 @@ func main() {
 
 1. pass pointer to pointer method.
 
-   ```go
-   type Vertex struct {
+    ```go
+    type Vertex struct {
      x, y int
-   }
-   func (v *Vertext) F() {
+    }
+    func (v *Vertext) F() {
      ...
-   }
+    }
    
-   func main() {
+    func main() {
      v := Vertex{3, 4}
      v.F() // go interpret to (&v).F()
-   }
-   ```
+    }
+    ```
 
 2. pass value to value method
 
-   ```go
-   func (v Vertext) F() {
+    ```go
+    func (v Vertext) F() {
      ...
-   }
-   ...
-   pv := &Vertex{3, 4}
-   pv.F() // go interpret pv to (*pv).F()
-   ```
+    }
+    ...
+    pv := &Vertex{3, 4}
+    pv.F() // go interpret pv to (*pv).F()
+    ```
 
-   
 
 ### interface
 
@@ -386,7 +398,6 @@ func main() {
     Error() string
   }
   ```
-
 
 ### other
 

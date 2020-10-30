@@ -1,4 +1,4 @@
-[#](#) princple
+# princple
 
   - study
     - [reading](reading)
@@ -13,7 +13,8 @@
 
   1. [○] [golang](golang)
   2. [✗] [k8s入门](k8s入门)
-  3. [✗] [[#vim tips|vim mode and key mapping]]
+  3. [✗] [vim mode and key mapping](#vim tips)
+  4. [✗] [redis](redis)
 
 # Tips
 
