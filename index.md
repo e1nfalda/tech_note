@@ -1,6 +1,7 @@
 # princple
 
   * study
+    * [study method](study-method)
     * [reading](reading)
     * [english](english)
   * fitness
@@ -8,9 +9,9 @@
     * running
     * strength
     * [meditation](meditation)
-  * play
   * habit
     * [早睡早期](早睡早期)
+  * [[KISS|Keep It Simple and Stupid]]
 
 # GTD
 
