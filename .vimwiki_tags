@@ -9,6 +9,9 @@ DBMS	Tech/Theory/database.md	1;"	vimwiki:Tech/Theory/database\tTech/Theory/datab
 IP	Tech/Theory/TCP／IP.md	1;"	vimwiki:Tech/Theory/TCP／IP\tTech/Theory/TCP／IP
 TCP	Tech/Theory/TCP／IP.md	1;"	vimwiki:Tech/Theory/TCP／IP\tTech/Theory/TCP／IP
 book-list	book-list.md	1;"	vimwiki:book-list\tbook-list
+find	diary/2020-11-02.md	2;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02
 lock	Tech/Theory/database.md	74;"	vimwiki:Tech/Theory/database\tTech/Theory/database#DBMS#mysql 锁
-vim	diary/2020-11-02.md	2;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02#vim
+sed	diary/2020-11-02.md	2;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02
+shell	diary/2020-11-02.md	2;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02
+vim	diary/2020-11-02.md	1;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02
 书单	book-list.md	1;"	vimwiki:book-list\tbook-list
