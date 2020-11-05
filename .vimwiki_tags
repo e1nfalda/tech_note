@@ -6,12 +6,18 @@
 !_TAG_PROGRAM_URL	https://github.com/vimwiki/vimwiki
 !_TAG_PROGRAM_VERSION	2.5
 DBMS	Tech/Theory/database.md	1;"	vimwiki:Tech/Theory/database\tTech/Theory/database
+DP	diary/2020-11-04.md	1;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04
 IP	Tech/Theory/TCP／IP.md	1;"	vimwiki:Tech/Theory/TCP／IP\tTech/Theory/TCP／IP
 TCP	Tech/Theory/TCP／IP.md	1;"	vimwiki:Tech/Theory/TCP／IP\tTech/Theory/TCP／IP
+algorithm	diary/2020-11-04.md	1;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04
 book-list	book-list.md	1;"	vimwiki:book-list\tbook-list
+english	diary/2020-11-04.md	7;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04#english
+english	diary/2020-11-04.md	8;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04#english
 find	diary/2020-11-02.md	2;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02
 lock	Tech/Theory/database.md	74;"	vimwiki:Tech/Theory/database\tTech/Theory/database#DBMS#mysql 锁
 sed	diary/2020-11-02.md	2;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02
 shell	diary/2020-11-02.md	2;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02
+todo	diary/2020-11-04.md	7;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04#todo
+todo	diary/2020-11-04.md	8;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04#todo
 vim	diary/2020-11-02.md	1;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02
 书单	book-list.md	1;"	vimwiki:book-list\tbook-list
