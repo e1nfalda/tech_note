@@ -1,4 +1,4 @@
-:book-list:书单:
+:book-list:
 
 -----
 
