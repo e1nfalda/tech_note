@@ -13,7 +13,7 @@
   * [[KISS|Keep It Simple and Stupid]]
 
 # GTD
-  1. [✗] gtd-algorithm
+  1. [✗] [gtd algorithm](gtd-algorithm)
   2. [✗] [golang](golang)
   3. [✗] [k8s入门](k8s入门)
   4. [✗] [vim mode and key mapping](#vim tips)
