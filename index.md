@@ -5,7 +5,7 @@
     * [english](english)
   * fitness
     * [eat](eat)
-    * running
+    * [running](running)
     * strength
     * [meditation](meditation)
   * [habit](habit)
@@ -21,6 +21,7 @@
 
 # Pieces
   1. `docker三剑客`: `compose`、`machine`和 `swarm` 是docker 原生提供的三大编排工具。 :docker:
+  2. 
 
 # 笔记
   * [技术笔记](note)
