@@ -11,6 +11,11 @@
   * [habit](habit)
     * [早睡早期](早睡早期)
   * [[KISS|Keep It Simple and Stupid]]
+  * 年年不忘，必有回响
+
+# timeline
+  * history
+  * personal
 
 # GTD
   1. [✗] [gtd algorithm](gtd-algorithm)
@@ -26,3 +31,6 @@
 # 笔记
   * [技术笔记](note)
   * [其他](./Misellanies)
+
+# keywords
+  * `Affinity` ipad photoshop
