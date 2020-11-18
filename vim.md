@@ -18,4 +18,3 @@
       | :lmap  :lnoremap :lunmap | 插入、命令行、Lang-Arg       |
       | :cmap  :cnoremap :cunmap | 命令行                       |
       | :tmap  :tnoremap :tunmap | 终端作业                     |
-
