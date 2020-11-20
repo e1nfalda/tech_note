@@ -13,6 +13,7 @@
 
 ## codis
 请求先请求到proxy,proxy做sharing后转发到相应实例上。`sharding规则`(路由表/转发表/slot表)保存在集中化组建(zookeeper, 文件系统等).
+*codis在redis源码patch slot代码实现slot功能。*
 
 
 ----
