@@ -18,7 +18,6 @@ find	diary/2020-11-02.md	2;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02
 lock	Tech/Theory/database.md	74;"	vimwiki:Tech/Theory/database\tTech/Theory/database#DBMS#mysql 锁
 read-list	gtd-algorithm.md	27;"	vimwiki:gtd-algorithm\tgtd-algorithm#read-list
 read-list	gtd-algorithm.md	28;"	vimwiki:gtd-algorithm\tgtd-algorithm#read-list
-redis	Tech/Applications/Redis/basic.md	1;"	vimwiki:Tech/Applications/Redis/basic\tTech/Applications/Redis/basic
 redis	Tech/Applications/Redis/distribute.md	1;"	vimwiki:Tech/Applications/Redis/distribute\tTech/Applications/Redis/distribute
 sed	diary/2020-11-02.md	2;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02
 shell	diary/2020-11-02.md	2;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02

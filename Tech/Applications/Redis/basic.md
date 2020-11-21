@@ -1,4 +1,4 @@
-:redis:
+# redis
 ## 备份
 
 ### RDB(快照)
@@ -47,11 +47,27 @@ Append Only File
 
 连续且无相关的命令
 
+## Distribute
+  1. master-slave replication
+    通过`SYNC`命令同步master内容到slave。
+  2. sentinel
+    监控节点运行状态，主从切换。
+  3. redis-cluster
+    去中心化，使用gossip在集群间同步路由表和集群拓补信息,每个节点都保存相关信息。
+    *客户端向任一节点发送请求，根据节点返回值做重定向(MOVE、ASK)操作*
+  4. codis
+    请求先请求到proxy,proxy做sharing后转发到相应实例上。`sharding规则`(路由表/转发表/slot表)保存在集中化组建(zookeeper, 文件系统等).
+    *codis在redis源码patch slot代码实现slot功能。*
+
+----
+[redis 集群](../../../../articles/Tech/redis-cluster和Codis关于slot迁移原理对比 - 黑客画家的个人空间 - OSCHINA __ Reader View.pdf)
+
 ---
-[文章](https://app.getpocket.com/read/2402341457)
+[Redis基础常用类型、时间复杂度](https://app.getpocket.com/read/2402341457)
+[redis 内部结构-源码解析](http://zhangtielei.com/posts/blog-redis-dict.html)
 
 
-# redis-mindmap
+## redis-mindmap
 
 通过思维导图整理redis的重要知识点
 
@@ -82,4 +98,6 @@ https://github.com/Weiwf/redis-mindmap/blob/master/pic/%E5%93%A8%E5%85%B5.png
 #### 七、缓存设计
 
 https://github.com/Weiwf/redis-mindmap/blob/master/pic/%E7%BC%93%E5%AD%98%E8%AE%BE%E8%A%A1.png
+
+
 
