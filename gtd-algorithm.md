@@ -1,13 +1,7 @@
-1. 数据结构
-  * **base:** linked-list, array
-  * **derived**
-    1. hashmap 
-    2. stack(栈)
-    3. heap(堆)
-    4. queue(队列)
-    5. tree
-    6. graph
-2. 算法
+
+## 数据结构|project:DataStruct
+
+## 算法|project:Algorithm
   * 算法思想
     有些思想会有重叠
 
@@ -23,6 +17,8 @@
     10. 分支界限法
     11. 概率算法
     12. 近似算法
+
+
 ----
 [zhihu:常用算法简介及文章](https://www.zhihu.com/search?type=content&q=%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3) :read-list:
 [12种算法思想](https://www.w3xue.com/exp/article/201812/14238.html) :read-list:

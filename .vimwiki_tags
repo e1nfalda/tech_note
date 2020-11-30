@@ -11,13 +11,12 @@ IP	Tech/Theory/TCP／IP.md	1;"	vimwiki:Tech/Theory/TCP／IP\tTech/Theory/TCP／I
 TCP	Tech/Theory/TCP／IP.md	1;"	vimwiki:Tech/Theory/TCP／IP\tTech/Theory/TCP／IP
 algorithm	diary/2020-11-04.md	1;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04
 book-list	book-list.md	1;"	vimwiki:book-list\tbook-list
-docker	index.md	28;"	vimwiki:index\tindex#Pieces
 english	diary/2020-11-04.md	7;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04#english
 english	diary/2020-11-04.md	8;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04#english
 find	diary/2020-11-02.md	2;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02
 lock	Tech/Theory/database.md	74;"	vimwiki:Tech/Theory/database\tTech/Theory/database#DBMS#mysql 锁
-read-list	gtd-algorithm.md	27;"	vimwiki:gtd-algorithm\tgtd-algorithm#read-list
-read-list	gtd-algorithm.md	28;"	vimwiki:gtd-algorithm\tgtd-algorithm#read-list
+read-list	gtd-algorithm.md	31;"	vimwiki:gtd-algorithm\tgtd-algorithm#read-list
+read-list	gtd-algorithm.md	32;"	vimwiki:gtd-algorithm\tgtd-algorithm#read-list
 redis	Tech/Applications/Redis/distribute.md	1;"	vimwiki:Tech/Applications/Redis/distribute\tTech/Applications/Redis/distribute
 sed	diary/2020-11-02.md	2;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02
 shell	diary/2020-11-02.md	2;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02
