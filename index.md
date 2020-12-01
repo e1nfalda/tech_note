@@ -18,11 +18,11 @@
   * personal
 
 # GTD
-  - [✗] [gtd algorithm](gtd-algorithm)  #c642959f
-  - [✗] [golang](golang)  #4a420976
-  - [✗] [k8s入门](k8s入门)  #f48ea664
-  - [✗] [photoshop](photoshop)  #076cfd9a
-  - [✗] [bigdata](bigdata)  #1c418213
+  * [algorithm](gtd-algorithm)  #c642959f
+  * [golang](golang)  #4a420976
+  * [k8s入门](k8s入门)  #f48ea664
+  * [photoshop](photoshop)  #076cfd9a
+  * [eabigdata](bigdata)  #1c418213
 
 
 # 笔记
