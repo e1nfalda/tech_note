@@ -1,13 +1,13 @@
 
-## datastruct| project:# DataStruct
-* [ ] **base:** linked-list, array  #f3945011
-* [ ] **derived**  #256f0dfe
-  * [ ] [hashmap](hashmap) (2015-08-08)  #d9eb5835
-  * [ ] [stack](stack)(栈) (2020-12-13)  #f420722e
-  * [ ] [heap](heap)(堆)  #53d2cf85
-  * [ ] queue(队列)  #99991faf
-  * [ ] tree  #990dab11
-  * [ ] graph  #629cf265
+## datastruct | project:algorithm #study
+* [ ] **base:** linked-list, array  #e50fded9
+* [ ] **derived**  #461735d2
+    * [ ] hashmap (2015-08-08)  #5931fc58
+    * [X] stack(栈) (2020-12-13)  #c0912546
+    * [ ] heap(堆)  #427e3352
+    * [ ] queue(队列)  #4b8cc2bd
+    * [ ] tree  #7f64fb84
+    * [ ] graph  #6e660d8c
 
 ## 算法 | project:Algorithm
   * 算法思想
@@ -25,7 +25,6 @@
     10. 分支界限法
     11. 概率算法
     12. 近似算法
-
 
 ----
 [zhihu:常用算法简介及文章](https://www.zhihu.com/search?type=content&q=%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3) :read-list:
