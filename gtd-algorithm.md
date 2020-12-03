@@ -1,21 +1,21 @@
-
 ## datastruct | project:algorithm #study
-* [ ] **base:** linked-list, array  #e50fded9
-* [ ] **derived**  #461735d2
-    * [ ] hashmap (2015-08-08)  #5931fc58
-    * [X] stack(栈) (2020-12-13)  #c0912546
-    * [ ] heap(堆)  #427e3352
-    * [ ] queue(队列)  #4b8cc2bd
-    * [ ] tree  #7f64fb84
-    * [ ] graph  #6e660d8c
+* [] **base:** linked-list, array
+* [] **derived**
+    * [] hashmap (2015-08-08)
+    * [] stack(栈) (2020-12-13)
+    * [] heap(堆)
+    * [] queue(队列)
+    * [] tree
+    * [] graph
 
-## 算法 | project:Algorithm
+## 算法 || project:algorithm || +study
+* [] Enum(枚举/暴力算法)  #eee5c1ee
   * 算法思想
     有些思想会有重叠
 
-    1. Enum(枚举/暴力算法)
-    2. Recurrence(递推)
-    3. Recursion(递归)
+    * [] Enum(枚举/暴力算法)  #f0eaba0d
+    * [] Recurrence(递推)  #e97a2a93
+    * [] Recursion(递归)  #5444a085
     4. Divide&Conquer(分治)
     5. GreedyMethod(贪心算法)
     6. Backtracking(回溯)
