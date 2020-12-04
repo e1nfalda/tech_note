@@ -18,11 +18,10 @@
   * personal
 
 # GTD
-  * [algorithm](gtd-algorithm)  #c642959f
-  * [golang](golang)  #4a420976
-  * [k8s入门](k8s入门)  #f48ea664
-  * [photoshop](photoshop)  #076cfd9a
-  * [eabigdata](bigdata)  #1c418213
+  * [life](life)
+  * work
+  * [study](study)
+  * [other](other)
 
 
 # 笔记
@@ -31,5 +30,6 @@
 
 # keywords
   * `Affinity` ipad photoshop
-# abc | project:daily
-* [ ] 房贷 (2020-12-20)  #f87802e1
+
+  
+  [taskwarrior key mapping](taskwarrior key mapping)
