@@ -17,11 +17,8 @@
   * history
   * personal
 
-# GTD
+# [GTD](GTD)
   * [life](life)
-  * work
-  * [study](study)
-  * [other](other)
 
 
 # 笔记
