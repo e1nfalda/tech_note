@@ -1,17 +1,19 @@
 # princple
-  * study
+  * keep study
     * [study method](study-method)
     * [reading](reading)
     * [english](english)
-  * fitness
+  * keep fitness
     * [eat](eat)
     * [running](running)
     * strength
     * [meditation](meditation)
-  * [habit](habit)
+  * [good habit](habit)
     * [早睡早期](早睡早期)
-  * [[KISS|Keep It Simple and Stupid]]
-  * 年年不忘，必有回响
+  * Attidue
+    * [[KISS|Keep It Simple and Stupid]]
+    * 年年不忘，必有回响
+    * [Focus](Focus) !!!
 
 # timeline
   * history

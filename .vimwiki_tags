@@ -25,5 +25,7 @@ sed	diary/2020-11-02.md	2;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02
 shell	diary/2020-11-02.md	2;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02
 todo	diary/2020-11-04.md	7;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04#todo
 todo	diary/2020-11-04.md	8;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04#todo
+tool	diary/2020-12-07.md	2;"	vimwiki:diary/2020-12-07\tdiary/2020-12-07
 vim	diary/2020-11-02.md	1;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02
 vim	diary/2020-12-04.md	1;"	vimwiki:diary/2020-12-04\tdiary/2020-12-04
+watchman	diary/2020-12-07.md	2;"	vimwiki:diary/2020-12-07\tdiary/2020-12-07
