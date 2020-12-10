@@ -21,6 +21,8 @@
 
 # [GTD](GTD)
   * [life](life)
+  * [study](study)
+  * [work](work)
 
 
 # 笔记
@@ -32,5 +34,3 @@
 
   
   [taskwarrior key mapping](taskwarrior key mapping)
-  
-  
