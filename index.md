@@ -24,13 +24,6 @@
   * [study](study)
   * [work](work)
 
-
 # 笔记
   * [技术笔记](note)
   * [其他](./Misellanies)
-
-# keywords
-  * `Affinity` ipad photoshop
-
-  
-  [taskwarrior key mapping](taskwarrior key mapping)
