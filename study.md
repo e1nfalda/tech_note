@@ -1,8 +1,8 @@
 # study-gtd
-## algoright | project:study
-* [X] 梳理算法 (2020-12-08 23:59)  #46a742a1
-* [ ] 数据结构 !!  #51807664
-    * [ ] 梳理常用数据结构及知识点  #5b0e422d
-    * [ ] [tree](tree)  #49edf80a
-    * [ ] graph  #0b532a70
-    * [ ] leetcode  #f89e0738
+## algoright || project:study
+  * [ ] 树  #a86ea183
+  * [ ] 图  #86b8533f
+  * [ ] 梳理常用数据结构及知识点  #885dac0e
+  * [ ] [tree](tree)  #b60c036d
+  * [ ] graph  #207c0c22
+  * [ ] leetcode  #bfe60b5e
