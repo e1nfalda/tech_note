@@ -1,13 +1,9 @@
 ## life || project:life
-  ### fitness || +fitness
-  * [ ] 羽毛球 (2020-12-04 21:00)  #325f6768
-  * [ ] 跑步 (2020-12-04 21:00)  #d8f50110
-  * [ ] 力量训练 (2020-12-04 21:00)  #1dd585c2
-  
-  ### repayment | +repayment
-  * [R] 房贷 !! (2020-12-20)  #de442999
-  * [R] 招商银行 !! (2020-12-28)  #cbb48a96
-  * [R] 中信银行 !! (2021-01-04)  #ded9a4bb
-  * [R] 花呗 !! (2020-12-09)  #e50bcd68
-  ### shoping-list || +other
-  * [S] 咖啡豆  #c5ab31c1
+
+### fitness | +fitness +READY
+
+### repayment | +repayment +MONTH
+* [W] 招商信用卡 (2020-12-18)  #ef7cd048
+* [W] 房贷 (2020-12-20)  #c5171dc9
+* [W] 房贷 (2020-12-20)  #a04f34e9
+### shoping-list

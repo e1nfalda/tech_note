@@ -14,10 +14,7 @@
     * [[KISS|Keep It Simple and Stupid]]
     * 年年不忘，必有回响
     * [Focus](Focus) !!!
-
-# timeline
-  * history
-  * personal
+    * 不要一直呆在自己的舒适区
 
 # [GTD](GTD)
   * [life](life)
