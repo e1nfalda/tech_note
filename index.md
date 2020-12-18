@@ -16,13 +16,14 @@
     * [Focus](Focus) !!!
     * 不要一直呆在自己的舒适区
   * Tools
-    %% 工欲善其事，必先利其器；不要成工具党
+    %% 工欲善其事，必先利其器；但不要成工具党
     * GTD: :taskwarrior:GoogleCalendar:Trello:
     * TodoList: :taskwarrior:GoogleCalendar:
     * ReadItLater: :pocket:
     * FlashCard: :anki:
     * Note: :vimwiki:typora:
-    * temp Note :keep:
+    * temp Note :Keep:
+    * News: zhiboba,twitter,feedly,rsshub
 
 
 # [GTD](GTD)

@@ -10,6 +10,7 @@ DP	diary/2020-11-04.md	1;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04
 GoogleCalendar	index.md	20;"	vimwiki:index\tindex#GoogleCalendar
 GoogleCalendar	index.md	21;"	vimwiki:index\tindex#GoogleCalendar
 IP	Tech/Theory/TCP／IP.md	1;"	vimwiki:Tech/Theory/TCP／IP\tTech/Theory/TCP／IP
+Keep	index.md	25;"	vimwiki:index\tindex#Keep
 TCP	Tech/Theory/TCP／IP.md	1;"	vimwiki:Tech/Theory/TCP／IP\tTech/Theory/TCP／IP
 Trello	index.md	20;"	vimwiki:index\tindex#Trello
 algorithm	diary/2020-11-04.md	1;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04
@@ -20,7 +21,6 @@ english	diary/2020-11-04.md	7;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04#engli
 english	diary/2020-11-04.md	8;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04#english
 find	diary/2020-11-02.md	2;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02
 golang	diary/2020-12-02.md	3;"	vimwiki:diary/2020-12-02\tdiary/2020-12-02#golang
-keep	index.md	25;"	vimwiki:index\tindex#keep
 linux	diary/2020-12-07.md	1;"	vimwiki:diary/2020-12-07\tdiary/2020-12-07
 lock	Tech/Theory/database.md	74;"	vimwiki:Tech/Theory/database\tTech/Theory/database#DBMS#mysql 锁
 new-word	diary/2020-12-09.md	11;"	vimwiki:diary/2020-12-09\tdiary/2020-12-09#new-word
