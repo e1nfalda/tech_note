@@ -15,6 +15,7 @@ TCP	Tech/Theory/TCP／IP.md	1;"	vimwiki:Tech/Theory/TCP／IP\tTech/Theory/TCP／
 Trello	index.md	20;"	vimwiki:index\tindex#Trello
 algorithm	diary/2020-11-04.md	1;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04
 anki	index.md	23;"	vimwiki:index\tindex#anki
+book	diary/2020-12-20.md	1;"	vimwiki:diary/2020-12-20\tdiary/2020-12-20
 book-list	book-list.md	1;"	vimwiki:book-list\tbook-list
 chrome	diary/2020-12-09.md	1;"	vimwiki:diary/2020-12-09\tdiary/2020-12-09
 english	diary/2020-11-04.md	7;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04#english
@@ -33,6 +34,7 @@ read-list	gtd-algorithm.md	31;"	vimwiki:gtd-algorithm\tgtd-algorithm#read-list
 redis	Tech/Applications/Redis/distribute.md	1;"	vimwiki:Tech/Applications/Redis/distribute\tTech/Applications/Redis/distribute
 sed	diary/2020-11-02.md	2;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02
 shell	diary/2020-11-02.md	2;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02
+study	diary/2020-12-20.md	1;"	vimwiki:diary/2020-12-20\tdiary/2020-12-20
 taskwarrior	index.md	20;"	vimwiki:index\tindex#taskwarrior
 taskwarrior	index.md	21;"	vimwiki:index\tindex#taskwarrior
 todo	diary/2020-11-04.md	7;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04#todo
