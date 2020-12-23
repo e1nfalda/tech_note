@@ -1,4 +1,4 @@
-### 分布式系统
+# 分布式系统 :theory:DistributeSystem:
 
 #### [CAP](http://www.ruanyifeng.com/blog/2018/07/cap.html)
 

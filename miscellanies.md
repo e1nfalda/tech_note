@@ -1,6 +1,6 @@
-## miscellanies
+# miscellanies :Tech:
 
-### EBNF（扩展的巴科斯范式）
+### EBNF（扩展的巴科斯范式）  :EBNF:
 
 > `metasyntax`一种。和`BNF`语法稍有差异。python使用的BNF,golang使用的EBNF。[wike]([https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form](https://en.wikipedia.org/wiki/Extended_Backus–Naur_form))
 
@@ -19,7 +19,7 @@
 | special sequence                                                                  | ? ... ?   |   |
 | exception                                                                         | -         |   |
 
-### 鸭子类型（duck typing）
+### 鸭子类型（duck typing） :Duck-typing:
 
 [wike: 鸭子类型](https://zh.wikipedia.org/wiki/%E9%B8%AD%E5%AD%90%E7%B1%BB%E5%9E%8B)
 
@@ -48,21 +48,21 @@ golang，只要实现了相应接口的方法就可以调用。
 
 **接口：**需要实现接口中下定义的所以方法。 
 
-#### CIDR格式
+### CIDR格式 :CIDR:
 > 采用各种长度的"网络前缀"来代替分类地址中的网络号和子网号。常用格式如（192.168.11.0/18）前18位表示网断。
 
-#### 网络
+### 网络
 
 ```
 // Mello网络流局域网其它设备的流量
 wlan0/eth0 -> br-lan -> FORWARD (iptables) -> tun1 -> tun2socks (Mellow) -> ROUTING -> pppoe-wan
 ```
 
-#### semaphore（信号量） vs mutex
+#### semaphore（信号量） vs mutex  :semaphore:mutex:
 
 互斥锁和**binary semaphore**比较类似，但机制有不同。互斥锁可以被其他unlock。
 
-### 心跳检测（health check）
+### 心跳检测（health check） :health-check:
 
 #### 针对问题
 
