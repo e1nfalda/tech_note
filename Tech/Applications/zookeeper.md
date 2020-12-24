@@ -14,7 +14,7 @@
 
 ### Session
 
-![image-20200910164059571](../../.src/image-20200910164059571.png)
+![image-20200910164059571](https://raw.githubusercontent.com/e1nfalda/IAaFaJdFLzSk/ignore/uPic/image-20200910164059571.png)
 
 1. 一个客户端连接一个会话，由zookeeper分配唯一会话id 
 2. 客户端以特定的时间间隔发送心跳以保持会话有效.

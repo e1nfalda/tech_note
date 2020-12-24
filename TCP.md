@@ -7,7 +7,7 @@
 
 - Sequence Number: 序列号;解决乱序问题。
 
-- Acknowledgement Number: ACK。用来确认收到。  [黄色字段ACK会传递的字段图](../../.src/image-20200925172720046.png)
+- Acknowledgement Number: ACK。用来确认收到。  [黄色字段ACK会传递的字段图](https://raw.githubusercontent.com/e1nfalda/IAaFaJdFLzSk/ignore/uPic/image-20200925172720046.png)
 
 - Window(Advertised-Window):滑动窗口。流量控制。
 

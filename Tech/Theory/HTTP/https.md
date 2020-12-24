@@ -1,4 +1,4 @@
-<img src="../../../.src/image-20200922142313775.png" alt="image-20200922142313775" style="zoom:30%;" />
+![](https://raw.githubusercontent.com/e1nfalda/IAaFaJdFLzSk/ignore/uPic/image-20200922142313775.png)
 
 ### 加密
 

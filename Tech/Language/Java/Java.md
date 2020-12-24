@@ -199,7 +199,7 @@ byte,short,char—> int —> long—> float —> double
 
 3. [内存结构](https://deepu.tech/memory-management-in-jvm/)。
 
-   ![JVM Memory structure](./.src/8uh8SPy.png)
+   ![JVM Memory structure]https://raw.githubusercontent.com/e1nfalda/IAaFaJdFLzSk/ignore/uPic/8uh8SPy.png)
 
 
 
