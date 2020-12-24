@@ -1,7 +1,6 @@
 # 数据库 :tech:database:DBMS:
 
-
-![DBMS名词](../../.src/image-20200804140626503.png)
+![DBMS名词](.src/image-20200804140626503.png)
 
 ### view视图
 
@@ -72,13 +71,14 @@ ACID
 :lock:
 
 
-![image-20200910204615488](../../.src/image-20200910204615488.png)
+![image-20200910204615488](.src/image-20200910204615488.png)
+![img](https://raw.githubusercontent.com/e1nfalda/IAaFaJdFLzSk/ignore/uPic/gjBTmF.png)
 
 -------------
 
-==Data retrieval==： means obtaining data from a database management system such as ODBMS. In this case, it is considered that data is represented in a structured way, and there is no ambiguity in data.
+`Data retrieval`： means obtaining data from a database management system such as ODBMS. In this case, it is considered that data is represented in a structured way, and there is no ambiguity in data.
 
-==CRUD==：Acronym for “create, read, update, delete”
+`CRUD`：Acronym for “create, read, update, delete”
 
 ---------------
 
