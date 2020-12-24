@@ -2,7 +2,7 @@
 
 ### 结构
 
-<img src="../../.././.src/http_response.jpg" alt="http响应结构" style="zoom:50%;" />
+<img src="../https://raw.githubusercontent.com/e1nfalda/IAaFaJdFLzSk/ignore/uPic/http_response.jpg" alt="http响应结构" style="zoom:50%;" />
 
 ### HTTP/0.9
 

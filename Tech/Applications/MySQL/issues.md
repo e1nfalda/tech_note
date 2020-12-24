@@ -65,7 +65,7 @@ sql_mod包含一个 `TRADITIONAL`, `STRICT_TRANS_TABLES`, `STRICT_ALL_TABLES`一
 >
 > 4. 如果使用非自增主键（如果身份证号或学号等），由于每次插入主键的值近似于随机，因此每次新纪录都要被插到现有索引页得中间某个位置：
 >
->    <img src="../../.././.src/14.png" alt="img" style="zoom:50%;" />
+>    <img src="../https://raw.githubusercontent.com/e1nfalda/IAaFaJdFLzSk/ignore/uPic/14.png" alt="img" style="zoom:50%;" />
 >
 >    此时MySQL不得不为了将新记录插到合适位置而移动数据，甚至目标页面可能已经被回写到磁盘上而从缓存中清掉，此时又要从磁盘上读回来，这增加了很多开销，同时频繁的移动、分页操作造成了大量的碎片，得到了不够紧凑的索引结构，后续不得不通过OPTIMIZE TABLE来重建表并优化填充页面。
 >

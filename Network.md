@@ -10,7 +10,7 @@
 
 ## 分层(tcp/ip 5层,OSI 7层)
 
-![net_protocols](../.././.src/net_protocols.png)
+![net_protocols](https://raw.githubusercontent.com/e1nfalda/IAaFaJdFLzSk/ignore/uPic/net_protocols.png)
 
 ### 链路层：实现了hop间的通信协议。PPP、ATM、Ethernet等
 

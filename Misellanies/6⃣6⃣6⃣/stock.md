@@ -2,7 +2,7 @@
 
 平安账户：16-19
 
-[image-20200706035955622](../.././.src/image-20200706035955622.png)
+[image-20200706035955622](https://raw.githubusercontent.com/e1nfalda/IAaFaJdFLzSk/ignore/uPic/image-20200706035955622.png)
 
 ## 策略
 #### 分散：

@@ -4,7 +4,7 @@
 
 http缓存分为`强缓存`和`协商缓存`
 
-<img src="../../.././.src/940884-20180423141951735-912699213.png" alt="缓存流程图" style="zoom:50%;" />
+<img src="../https://raw.githubusercontent.com/e1nfalda/IAaFaJdFLzSk/ignore/uPic/940884-20180423141951735-912699213.png" alt="缓存流程图" style="zoom:50%;" />
 
 #### 强缓存：
 

@@ -3,7 +3,7 @@
 > 
 > Segment包只有source Port和Destination Port(IP在网络层)。 
 
-![Segment 结构图](../.././.src/134217wuckuyvvcsuygnds.png)
+![Segment 结构图](https://raw.githubusercontent.com/e1nfalda/IAaFaJdFLzSk/ignore/uPic/134217wuckuyvvcsuygnds.png)
 
 - Sequence Number: 序列号;解决乱序问题。
 
@@ -11,11 +11,11 @@
 
 - Window(Advertised-Window):滑动窗口。流量控制。
 
-- TCP Flag: 包的类型。SYN,FIN,ACK…[详细](../.././.src/image-20190725155505155.png) 
+- TCP Flag: 包的类型。SYN,FIN,ACK…[详细](https://raw.githubusercontent.com/e1nfalda/IAaFaJdFLzSk/ignore/uPic/image-20190725155505155.png) 
 
 ## TCP状态机
 
-​    ![tcpfsm图](../.././.src/tcpfsm.png)
+​    ![tcpfsm图](https://raw.githubusercontent.com/e1nfalda/IAaFaJdFLzSk/ignore/uPic/tcpfsm.png)
 
 - **SYN超时**：server收到SYN返回SYN-ACK后，等待client发送SYN状态时，发送$2^n$(0-4) 秒间隔五次后未收到响应。
 - **SYN FLOOD攻击:** 因为需要63（1+2+…16）秒所以利用该点，无线发送SYN请求。
