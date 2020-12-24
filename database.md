@@ -72,7 +72,6 @@ ACID
 
 
 ![image-20200910204615488](.src/image-20200910204615488.png)
-![img](https://raw.githubusercontent.com/e1nfalda/IAaFaJdFLzSk/ignore/uPic/gjBTmF.png)
 
 -------------
 
