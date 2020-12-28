@@ -56,8 +56,6 @@
 
 ### xsrf/csrf（Cross Site Request Forgery, 跨站域请求伪造）
 
-
-
 ### 钓鱼
 
 ### 劫持
@@ -66,9 +64,6 @@
 
 ## 引用及链接
 
-[^jsonp]: [stackoverflow关于jsonp原理的实现。](https://stackoverflow.com/questions/3839966/can-anyone-explain-what-jsonp-is-in-layman-terms)
-[^Origin]: An origin is defined as a combination of [URI scheme](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier), [host name](https://en.wikipedia.org/wiki/Hostname), and [port number](https://en.wikipedia.org/wiki/Port_(computer_networking))
-
 [^ SOP]: [**same-origin policy**](https://en.wikipedia.org/wiki/Same-origin_policy)
 
 [常见网络安全](https://segmentfault.com/a/1190000006672214#articleHeader10)
@@ -76,3 +71,6 @@
 [跨域的方式](https://blog.csdn.net/superaistar/article/details/83618689)
 
 [实现跨域请求的八种方式](https://blog.csdn.net/ligang2585116/article/details/73072868)
+
+[^jsonp]: [stackoverflow关于jsonp原理的实现。](https://stackoverflow.com/questions/3839966/can-anyone-explain-what-jsonp-is-in-layman-terms)
+An origin is defined as a combination of [URI scheme](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier), [host name](https://en.wikipedia.org/wiki/Hostname), and [port number](https://en.wikipedia.org/wiki/Port_(computer_networking))

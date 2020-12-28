@@ -1,4 +1,5 @@
 # vim
+
   vim-modes: `normal`, `command`, `insert`, `visual`, `select`
     `visual` vs `select`: 
       作用: 主要是不同模式下，键盘映射不一样。可以对visual mode 多一套键盘映射 
