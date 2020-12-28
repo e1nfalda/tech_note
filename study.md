@@ -16,7 +16,7 @@
   1. DEQUE (双向队列)
 * tree
   1. binary search tree(BST)
-    - AVL
+    - [AVL](AVL)
     - red-black tree
 * graph
 
