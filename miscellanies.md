@@ -1,6 +1,10 @@
 # 技术杂项
 :Tech:
 
+### npm：
+
+  1.  npm i(install) -D(--save-dev) PACKAGE@(version-tag)
+
 ### EBNF（扩展的巴科斯范式）  :EBNF:
 
 > `metasyntax`一种。和`BNF`语法稍有差异。python使用的BNF,golang使用的EBNF。[wike]([https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form](https://en.wikipedia.org/wiki/Extended_Backus–Naur_form))

@@ -1,5 +1,5 @@
 # HTTPS
-:Tech:Theory:HTTPS:
+:Tech:Theory:HTTP:
 
 ![流程图](https://raw.githubusercontent.com/e1nfalda/IAaFaJdFLzSk/ignore/uPic/image-20200922142313775.png)
 
