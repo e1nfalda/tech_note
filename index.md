@@ -34,4 +34,3 @@
 # 笔记
   * [技术笔记](note)
   * [其他](./Misellanies)
-[pdf](pdf)
