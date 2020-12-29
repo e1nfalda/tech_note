@@ -1,4 +1,5 @@
-# 数据结构树 :tree:algorithm:
+# 数据结构树 
+:Tech:algorithm:
 
 ## 常用的树
 * `无序树`：树中任意节点的子节点之间没有顺序关系，这种树称为无序树，也称为[自由树](https://zh.wikipedia.org/wiki/自由树)；

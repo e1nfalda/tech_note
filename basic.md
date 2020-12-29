@@ -1,4 +1,6 @@
 # redis
+:Tech:Application:
+
 ## 备份
 
 ### RDB(快照)

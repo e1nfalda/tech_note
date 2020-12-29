@@ -1,4 +1,5 @@
-# 数据库 :tech:database:DBMS:
+# 数据库 
+:Tech:Theory:database:DBMS:
 
 ![DBMS名词](.src/image-20200804140626503.png)
 

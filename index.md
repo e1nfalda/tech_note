@@ -25,12 +25,9 @@
     * Temp Note: `Keep`
     * News: zhiboba,twitter,feedly,rsshub
 
-
 # [GTD](GTD)
   * [life](life)
   * [study](study)
   * [work](work)
 
-# 笔记
-  * [技术笔记](note)
-  * [其他](./Misellanies)
+# [notes](notes)

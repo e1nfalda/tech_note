@@ -1,4 +1,5 @@
-# :bash:
+# bash
+:Tech:Language:
 
 ### sed&pear (in-place substitution/原地替换)
 

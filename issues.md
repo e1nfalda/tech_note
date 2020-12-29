@@ -1,3 +1,6 @@
+# MySQL常见问题
+:Tech:Application:
+
 #### MySQL不可以一条语句update select同一个表。（sqlalchemy可以。）
 
 >The reason for this error is that MySQL doesn’t allow updates to a table when you are also using that same table in an inner select as your update criteria. The article goes on to provide a solution, which is to use a temporary table.

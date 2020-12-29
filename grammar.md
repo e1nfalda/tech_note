@@ -1,3 +1,6 @@
+# MySQL语法
+:Tech:Application:
+
 ### 索引
 
 ```sql

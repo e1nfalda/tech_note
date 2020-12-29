@@ -1,4 +1,5 @@
-## 用到的方法
+# MySql 常用方法
+:Tech:Application:
 
 - `group_concat(COLUMN)`搜索结果拼接：
 

@@ -1,4 +1,5 @@
-## ES基本语法
+# ES基本语法
+:Tech:Language:
 
 ### 数据类型
 

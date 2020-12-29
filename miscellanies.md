@@ -1,4 +1,5 @@
-# miscellanies :Tech:
+# 技术杂项
+:Tech:
 
 ### EBNF（扩展的巴科斯范式）  :EBNF:
 

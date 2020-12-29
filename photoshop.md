@@ -1,4 +1,6 @@
-# photoshop :skill:
+# photoshop 
+:skill:
+
 ## 橡皮
 ## 魔术棒
 ## 钢笔

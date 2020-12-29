@@ -1,3 +1,6 @@
+# HTTP 协议
+:Tech:Theory:HTTP:
+
 #### `GET` vs `POST`
 1. 缓存：get主动缓存。post不。
 2. 幂等性。get是。post不一定。
