@@ -5,3 +5,90 @@
 !_TAG_PROGRAM_NAME	Vimwiki Tags
 !_TAG_PROGRAM_URL	https://github.com/vimwiki/vimwiki
 !_TAG_PROGRAM_VERSION	2.5
+Application	basic.md	2;"	vimwiki:basic\tbasic#redis
+Application	grammar.md	2;"	vimwiki:grammar\tgrammar#MySQL语法
+Application	issues.md	2;"	vimwiki:issues\tissues#MySQL常见问题
+Application	method.md	2;"	vimwiki:method\tmethod#MySql 常用方法
+Application	vim.md	2;"	vimwiki:vim\tvim#vim
+DBMS	database.md	2;"	vimwiki:database\tdatabase#数据库
+DistributeSystem	DistributSystem.md	2;"	vimwiki:DistributSystem\tDistributSystem#分布式系统
+DynamicProgramming	diary/2020-11-04.md	1;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04
+HTTP	HTTP-cache.md	2;"	vimwiki:HTTP-cache\tHTTP-cache#HTTP 缓存机制
+HTTP	HTTP-versions.md	2;"	vimwiki:HTTP-versions\tHTTP-versions#HTTP 版本记录
+HTTP	https.md	2;"	vimwiki:https\thttps#HTTPS
+HTTP	misc.md	2;"	vimwiki:misc\tmisc#HTTP 协议
+Language	ES6.md	2;"	vimwiki:ES6\tES6#ES基本语法
+Language	Gramma.md	2;"	vimwiki:Gramma\tGramma#Python语法
+Language	Java.md	2;"	vimwiki:Java\tJava#Java
+Language	Javascript／Jquery.md	2;"	vimwiki:Javascript／Jquery\tJavascript／Jquery#Javascript&Jquery
+Language	advance.md	2;"	vimwiki:advance\tadvance#Golang 进阶
+Language	bash.md	2;"	vimwiki:bash\tbash#bash
+Language	js-oop.md	2;"	vimwiki:js-oop\tjs-oop#javascript 进阶
+Tech	DistributSystem.md	2;"	vimwiki:DistributSystem\tDistributSystem#分布式系统
+Tech	ES6.md	2;"	vimwiki:ES6\tES6#ES基本语法
+Tech	Gramma.md	2;"	vimwiki:Gramma\tGramma#Python语法
+Tech	HTTP-cache.md	2;"	vimwiki:HTTP-cache\tHTTP-cache#HTTP 缓存机制
+Tech	HTTP-versions.md	2;"	vimwiki:HTTP-versions\tHTTP-versions#HTTP 版本记录
+Tech	Java.md	2;"	vimwiki:Java\tJava#Java
+Tech	Javascript／Jquery.md	2;"	vimwiki:Javascript／Jquery\tJavascript／Jquery#Javascript&Jquery
+Tech	advance.md	2;"	vimwiki:advance\tadvance#Golang 进阶
+Tech	bash.md	2;"	vimwiki:bash\tbash#bash
+Tech	basic.md	2;"	vimwiki:basic\tbasic#redis
+Tech	database.md	2;"	vimwiki:database\tdatabase#数据库
+Tech	diary/2020-12-07.md	1;"	vimwiki:diary/2020-12-07\tdiary/2020-12-07
+Tech	diary/2020-12-07.md	2;"	vimwiki:diary/2020-12-07\tdiary/2020-12-07
+Tech	docker.md	2;"	vimwiki:docker\tdocker#docker
+Tech	grammar.md	2;"	vimwiki:grammar\tgrammar#MySQL语法
+Tech	https.md	2;"	vimwiki:https\thttps#HTTPS
+Tech	issues.md	2;"	vimwiki:issues\tissues#MySQL常见问题
+Tech	js-oop.md	2;"	vimwiki:js-oop\tjs-oop#javascript 进阶
+Tech	method.md	2;"	vimwiki:method\tmethod#MySql 常用方法
+Tech	misc.md	2;"	vimwiki:misc\tmisc#HTTP 协议
+Tech	miscellanies.md	2;"	vimwiki:miscellanies\tmiscellanies#技术杂项
+Tech	network-tools.md	2;"	vimwiki:network-tools\tnetwork-tools#网络工具
+Tech	nginx.md	2;"	vimwiki:nginx\tnginx#nginx
+Tech	tree.md	2;"	vimwiki:tree\ttree#数据结构-树
+Theory	DistributSystem.md	2;"	vimwiki:DistributSystem\tDistributSystem#分布式系统
+Theory	HTTP-cache.md	2;"	vimwiki:HTTP-cache\tHTTP-cache#HTTP 缓存机制
+Theory	HTTP-versions.md	2;"	vimwiki:HTTP-versions\tHTTP-versions#HTTP 版本记录
+Theory	database.md	2;"	vimwiki:database\tdatabase#数据库
+Theory	https.md	2;"	vimwiki:https\thttps#HTTPS
+Theory	misc.md	2;"	vimwiki:misc\tmisc#HTTP 协议
+algorithm	AVL.md	2;"	vimwiki:AVL\tAVL#AVL
+algorithm	diary/2020-11-04.md	1;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04
+algorithm	tree.md	2;"	vimwiki:tree\ttree#数据结构-树
+application	docker.md	2;"	vimwiki:docker\tdocker#docker
+application	nginx.md	2;"	vimwiki:nginx\tnginx#nginx
+book	diary/2020-12-20.md	1;"	vimwiki:diary/2020-12-20\tdiary/2020-12-20
+book	reading.md	1;"	vimwiki:reading\treading
+book-list	book-list.md	1;"	vimwiki:book-list\tbook-list
+chrome	diary/2020-12-09.md	1;"	vimwiki:diary/2020-12-09\tdiary/2020-12-09
+database	database.md	2;"	vimwiki:database\tdatabase#数据库
+english	diary/2020-11-04.md	7;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04#english
+english	diary/2020-11-04.md	8;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04#english
+find	diary/2020-11-02.md	3;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02#find
+golang	diary/2020-12-02.md	3;"	vimwiki:diary/2020-12-02\tdiary/2020-12-02#golang
+linux	diary/2020-12-07.md	1;"	vimwiki:diary/2020-12-07\tdiary/2020-12-07
+lock	database.md	72;"	vimwiki:database\tdatabase#数据库#mysql 锁
+network	network-tools.md	2;"	vimwiki:network-tools\tnetwork-tools#网络工具
+new-word	diary/2020-12-09.md	11;"	vimwiki:diary/2020-12-09\tdiary/2020-12-09#new-word
+new-word	diary/2020-12-09.md	12;"	vimwiki:diary/2020-12-09\tdiary/2020-12-09#new-word
+other	Misellanies/6⃣6⃣6⃣/围棋.md	2;"	vimwiki:Misellanies/6⃣6⃣6⃣/围棋\tMisellanies/6⃣6⃣6⃣/围棋#围棋
+other	diary/2020-12-11.md	1;"	vimwiki:diary/2020-12-11\tdiary/2020-12-11
+photograph	diary/2020-12-02.md	1;"	vimwiki:diary/2020-12-02\tdiary/2020-12-02
+read-list	gtd-algorithm.md	30;"	vimwiki:gtd-algorithm\tgtd-algorithm#read-list
+read-list	gtd-algorithm.md	31;"	vimwiki:gtd-algorithm\tgtd-algorithm#read-list
+redis	distribute.md	2;"	vimwiki:distribute\tdistribute#redis 进阶
+sed	diary/2020-11-02.md	3;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02#sed
+shell	diary/2020-11-02.md	3;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02#shell
+skill	photoshop.md	2;"	vimwiki:photoshop\tphotoshop#photoshop
+study	diary/2020-12-20.md	1;"	vimwiki:diary/2020-12-20\tdiary/2020-12-20
+todo	diary/2020-11-04.md	7;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04#todo
+todo	diary/2020-11-04.md	8;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04#todo
+tools	TaskWarrior.md	2;"	vimwiki:TaskWarrior\tTaskWarrior#TaskWarrior
+tools	diary/2020-12-07.md	2;"	vimwiki:diary/2020-12-07\tdiary/2020-12-07
+tools	network-tools.md	2;"	vimwiki:network-tools\tnetwork-tools#网络工具
+vim	diary/2020-11-02.md	1;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02
+vim	diary/2020-12-04.md	1;"	vimwiki:diary/2020-12-04\tdiary/2020-12-04
+vimwiki	vimwiki.md	1;"	vimwiki:vimwiki\tvimwiki
+web-security	network-security.md	2;"	vimwiki:network-security\tnetwork-security#web网络安全
