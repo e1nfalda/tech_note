@@ -1,5 +1,5 @@
 # MySQL语法
-:Tech:Application:
+<!-- :Tech:Application: -->
 
 ### 索引
 

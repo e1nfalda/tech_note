@@ -1,5 +1,5 @@
 # 数据库 
-:Tech:Theory:database:DBMS:
+<!-- :Tech:Theory:database:DBMS: -->
 
 ![DBMS名词](.src/image-20200804140626503.png)
 
@@ -69,7 +69,7 @@ ACID
 事务处理结束后，对数据的修改就是永久的，即便系统故障也不会丢失。
 
 ### mysql 锁
-:lock:
+<!-- :lock: -->
 
 
 ![image-20200910204615488](.src/image-20200910204615488.png)

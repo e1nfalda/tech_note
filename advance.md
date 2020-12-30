@@ -1,5 +1,5 @@
 # Golang 进阶
-:Tech:Language:
+<!-- :Tech:Language: -->
 
 ### GC
 

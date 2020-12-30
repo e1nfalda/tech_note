@@ -1,5 +1,5 @@
 # Javascript&Jquery
-:Tech:Language:
+<!-- :Tech:Language: -->
 
 ### 其他：／
 

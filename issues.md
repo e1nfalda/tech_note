@@ -1,5 +1,5 @@
 # MySQL常见问题
-:Tech:Application:
+<!-- :Tech:Application: -->
 
 #### MySQL不可以一条语句update select同一个表。（sqlalchemy可以。）
 

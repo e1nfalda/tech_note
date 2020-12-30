@@ -1,5 +1,5 @@
 ## Python语法 
-:Tech:Language:
+<!-- :Tech:Language: -->
 
 ### with
 

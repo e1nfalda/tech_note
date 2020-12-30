@@ -1,5 +1,5 @@
 # photoshop 
-:skill:
+<!-- :skill: -->
 
 ## 橡皮
 ## 魔术棒

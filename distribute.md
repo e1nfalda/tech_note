@@ -1,5 +1,5 @@
 # redis 进阶
-:redis:
+<!-- :redis: -->
 
 ## master-slave replication
 通过`SYNC`命令同步master内容到slave。

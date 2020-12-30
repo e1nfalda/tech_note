@@ -1,5 +1,5 @@
 # HTTP 缓存机制
-:Tech:Theory:HTTP:
+<!-- :Tech:Theory:HTTP: -->
 
 ### :缓存:
 

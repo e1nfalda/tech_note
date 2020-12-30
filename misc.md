@@ -1,5 +1,5 @@
 # HTTP 协议
-:Tech:Theory:HTTP:
+<!-- :Tech:Theory:HTTP: -->
 
 #### `GET` vs `POST`
 1. 缓存：get主动缓存。post不。

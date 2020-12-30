@@ -1,1 +1,1 @@
-:vimwiki:
+<!-- :vimwiki: -->

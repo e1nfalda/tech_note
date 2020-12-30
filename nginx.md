@@ -1,5 +1,5 @@
 # nginx
-:Tech:application:
+<!-- :Tech:application: -->
 
 ### 正则
 

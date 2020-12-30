@@ -1,5 +1,5 @@
 # javascript 进阶
-:Tech:Language:
+<!-- :Tech:Language: -->
 
 ### 面向对象特点
 
