@@ -105,4 +105,6 @@ func main() {
 }
 
 ````
+### go install and uninstall
+`go get IMPORT_PATH` <==> `go clean -i IMPORT_PATH`
 
