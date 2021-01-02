@@ -83,14 +83,3 @@ ACID
 ---------------
 
 [^一张图彻底搞懂 MySQL 的锁机制]: https://learnku.com/articles/39212?order_by=vote_count&
-
-
-# Generated Tags
-
-## DBMS
-
-- [Tech/Theory/database](Tech/Theory/database)
-
-## lock
-
-- [mysql 锁](Tech/Theory/database#DBMS#mysql 锁)

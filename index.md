@@ -2,18 +2,18 @@
   * keep study
     * [study method](study-method)
     * [reading](reading)
-    * [english](english)
+    * english
   * keep fitness
     * [eat](eat)
     * [running](running)
     * strength
     * [meditation](meditation)
-  * [good habit](habit)
+  * good habit
     * [早睡早期](早睡早期)
   * Attidue
-    * [Keep It Simple and Stupid](KISS)
-    * 年年不忘，必有回响
     * [Focus](Focus) !!!
+    * [Keep It Simple and Stupid](KISS)
+    * [念念不忘，必有回](attitude-regain)
     * 不要一直呆在自己的舒适区
   * Tools
     工欲善其事，必先利其器；但不要成工具党
@@ -28,10 +28,7 @@
 # [GTD](GTD)
   * [life](life)
   * [study](study)
-  * [work](work)
+  * work
 
 # toc
   [notes](notes)
-  [regular expression](regular-expression)
-  
-  
