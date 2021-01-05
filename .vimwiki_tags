@@ -23,6 +23,7 @@ Language	Java.md	2;"	vimwiki:Java\tJava#Java
 Language	Javascript／Jquery.md	2;"	vimwiki:Javascript／Jquery\tJavascript／Jquery#Javascript&Jquery
 Language	advance.md	2;"	vimwiki:advance\tadvance#Golang 进阶
 Language	bash.md	2;"	vimwiki:bash\tbash#bash
+Language	golang-base.md	2;"	vimwiki:golang-base\tgolang-base#Golang 语法
 Language	js-oop.md	2;"	vimwiki:js-oop\tjs-oop#javascript 进阶
 Tech	DistributSystem.md	2;"	vimwiki:DistributSystem\tDistributSystem#分布式系统
 Tech	ES6.md	2;"	vimwiki:ES6\tES6#ES基本语法
@@ -38,6 +39,7 @@ Tech	database.md	2;"	vimwiki:database\tdatabase#数据库
 Tech	diary/2020-12-07.md	1;"	vimwiki:diary/2020-12-07\tdiary/2020-12-07
 Tech	diary/2020-12-07.md	2;"	vimwiki:diary/2020-12-07\tdiary/2020-12-07
 Tech	docker.md	2;"	vimwiki:docker\tdocker#docker
+Tech	golang-base.md	2;"	vimwiki:golang-base\tgolang-base#Golang 语法
 Tech	grammar.md	2;"	vimwiki:grammar\tgrammar#MySQL语法
 Tech	https.md	2;"	vimwiki:https\thttps#HTTPS
 Tech	issues.md	2;"	vimwiki:issues\tissues#MySQL常见问题
@@ -68,6 +70,8 @@ english	diary/2020-11-04.md	7;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04#engli
 english	diary/2020-11-04.md	8;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04#english
 find	diary/2020-11-02.md	3;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02#find
 golang	diary/2020-12-02.md	3;"	vimwiki:diary/2020-12-02\tdiary/2020-12-02#golang
+golang	golang-base.md	2;"	vimwiki:golang-base\tgolang-base#Golang 语法
+golang	golang.md	2;"	vimwiki:golang\tgolang#golang 学习资料
 linux	diary/2020-12-07.md	1;"	vimwiki:diary/2020-12-07\tdiary/2020-12-07
 lock	database.md	72;"	vimwiki:database\tdatabase#数据库#mysql 锁
 network	network-tools.md	2;"	vimwiki:network-tools\tnetwork-tools#网络工具
@@ -76,8 +80,8 @@ new-word	diary/2020-12-09.md	12;"	vimwiki:diary/2020-12-09\tdiary/2020-12-09#new
 other	Misellanies/6⃣6⃣6⃣/围棋.md	2;"	vimwiki:Misellanies/6⃣6⃣6⃣/围棋\tMisellanies/6⃣6⃣6⃣/围棋#围棋
 other	diary/2020-12-11.md	1;"	vimwiki:diary/2020-12-11\tdiary/2020-12-11
 photograph	diary/2020-12-02.md	1;"	vimwiki:diary/2020-12-02\tdiary/2020-12-02
-read-list	gtd-algorithm.md	30;"	vimwiki:gtd-algorithm\tgtd-algorithm#read-list
 read-list	gtd-algorithm.md	31;"	vimwiki:gtd-algorithm\tgtd-algorithm#read-list
+read-list	gtd-algorithm.md	32;"	vimwiki:gtd-algorithm\tgtd-algorithm#read-list
 redis	distribute.md	2;"	vimwiki:distribute\tdistribute#redis 进阶
 sed	diary/2020-11-02.md	3;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02#sed
 shell	diary/2020-11-02.md	3;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02#shell

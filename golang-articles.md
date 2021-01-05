@@ -1,4 +1,5 @@
-# golang 资料
+# golang 学习资料
+<!-- :golang: -->
 
 * 基础
   * []基础推荐官方文档，没有什么比这个更清晰了。官方文档可以看这个中文的，比较快一些 [https://go-zh.org/doc/](https://go-zh.org/doc/)
