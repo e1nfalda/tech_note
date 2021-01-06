@@ -24,11 +24,3 @@
     * Note: [vimwiki](vimwiki) `typora`
     * Temp Note: `Keep`
     * News: zhiboba,twitter,feedly,rsshub
-
-# [GTD](GTD)
-  * [life](life)
-  * [study](study)
-  * work
-
-# toc
-  [notes](notes)

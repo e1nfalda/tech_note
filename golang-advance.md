@@ -26,9 +26,9 @@ type ArbitraryType int
 type Pointer *ArbitraryType 
 ```
 
-|   uintptr   | unsafe.Pointer    | AnyType |
-| ---- | ---- | ---- |
-| uintptr(unsafePointer()) | unsafe.Pointer(&variable) |\*(Type\*)(unsafe.Pointer(&i))|
+| uintptr                  | unsafe.Pointer            | AnyType                        |
+| -----------------------  | ----                    | ----                           |
+| uintptr(unsafePointer()) | unsafe.Pointer(&variable) | \*(Type\*)(unsafe.Pointer(&i)) |
 
 ### reflect（反射/自省）
 

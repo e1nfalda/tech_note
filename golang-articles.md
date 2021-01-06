@@ -1,4 +1,4 @@
-# golang 学习资料
+# Golang 学习资料
 <!-- :golang: -->
 
 * 基础

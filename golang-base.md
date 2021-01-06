@@ -1,6 +1,7 @@
 # Golang 语法
 <!-- :Tech:Language:golang: -->
 
+## 基础语法
 ### go get
 
 > `go get -u ./...` 更新/安装项目需要的包 
@@ -19,28 +20,27 @@
 1. `T(v)`
 
 ### constant
-
  `const x [TYPE] = V`
->作用域：A constant can only be used within its declared scope. If you redeclare a constant in an inner scope with the same name again, it’ll be a new constant that is only visible to that inner scope and it will shadow the outer scope’s constant.
+ 
+作用域：A constant can only be used within its declared scope. If you redeclare a constant in an inner scope with the same name again, it’ll be a new constant that is only visible to that inner scope and it will shadow the outer scope’s constant.
+
 1. 数值常量默认没有类型。类型转换后就会是相应的类型。
 2. V  类型： bool、string、character、numeric values;
 
 ### iota [aɪ'oʊtə]: 些微
 
-  累加常量。在`const`声明中，初始化0。
+累加常量。在`const`声明中，初始化0。
 
-```go
-const (
-    a1 = iota  // 0
-    a2, // 1
-    _,
-    a3, // 3
-    a4 = 2, // 有赋值的则跳过正则。
-    a5   // 4
-)
-```
-
-
+  ```go
+  const (
+      a1 = iota  // 0
+      a2, // 1
+      _,
+      a3, // 3
+      a4 = 2, // 有赋值的则跳过正则。
+      a5   // 4
+  )
+  ```
 
 ### for
 
@@ -67,14 +67,13 @@ const (
        // todo
     }
     ```
-4. for range
-5. 
+4. for [range](#range)
     ```go
     for index[, value] := List {
       // todo
     }
     ```
-    **traps: `for range` 对value 是一个用来循环的新变量，如需在后续调用需要新赋值.**
+    **traps**: `for range` 对value 是一个用来循环的新变量，如需在后续调用需要新赋值.
     ```go
     for index, value := range {
       defer f() {fmt.Println(value)}
@@ -83,7 +82,7 @@ const (
 
 ### if
 
-1. can start with short statment；
+1. can start with [short statment](#short statment)
 
     ```go
     /* short statment x:= 10, 变量x的作用域仅在 if作用域内 */
@@ -101,6 +100,8 @@ const (
        ...
     }
     ```
+### short statment
+    `if` 或者 `switch` 等环境下赋值,作用域也在相应范围里.
 
 ### switch
 
@@ -120,11 +121,11 @@ const (
     ```go
     switch {
     case t.Hour() > 10:
-   	...
+      ...
     case t.Hour() > 20:
-   	...
+      ...
     default:
-   	...
+      ...
     }
     ```
 
@@ -136,13 +137,13 @@ const (
 >
 > 函数语句（defer函数的param传递生成） ---> return语句 ---> defer lastInFunc -> defer firstInFunc -> return值 
 
-1. execute sequence.FILO
+1. execute sequence. **FILO**
     ```go
-func d() {
-    defer Expression1;
-    defer Expreesion2;
-    // stacking defer, 先执行Expression2，再执行Expression1；
-}
+    func d() {
+        defer Expression1;
+        defer Expreesion2;
+        // stacking defer, 先执行Expression2，再执行Expression1；
+    }
     ```
 
 2. `defer` in loop
@@ -150,16 +151,15 @@ func d() {
     ```go
     // 如果f是比较大结构会占用大量栈空间。
     for {
-     f := os.File("...")
-     defer f.close()
+      f := os.File("...")
+      defer f.close()
     }
-   
     // 匿名函数结束后就可以尽快释放空间。
     for {
-     func () {
+      func () {
         f := os.File("...")
-     	 defer f.close()
-     }()
+        defer f.close()
+     } ()
     }
     ```
    
@@ -236,11 +236,11 @@ func d() {
 
     ```go
     func varF(x, y int) int {
-       return x * y
+      return x * y
     }
     func main() {
-       f := varF
-       f(1, 2)
+      f := varF
+      f(1, 2)
     }
     ```
 
@@ -248,37 +248,37 @@ func d() {
 
     ```go
     func main() {
-       x := 1
-       func () { // closure function need anonymous function?
-           fmt.Println("x", x)
+      x := 1
+      func () { // closure function need anonymous function?
+          fmt.Println("x", x)
    	}()
     }
     ```
 
 ### struct
 
->**Embedding**: If you embed a nameless struct then the embedded struct provides its state (and methods) to the embedding struct directly.
+> **Embedding**: If you embed a nameless struct then the embedded struct provides its state (and methods) to the embedding struct directly.
 
   ```go
-type Person struct {
-	name, sex string
-}
-type Policeman struct {
-	Person // Embeding；继承的核心
-	station string
+  type Person struct {
+    ame, sex string
+  }
+  type Policeman struct {
+  Person // Embeding；继承的核心
+  station string
 }
 // 生成实例方法；返回值为*Policeman， 则返回时需要&
 func NewPoliceman(name, sex, station string) *Policeman {
-	return &Policeman{Person{name, sex}, station} // struct literal
+  return &Policeman{Person{name, sex}, station} // struct literal
 }
 func main() {
   /* 指针和非指针最终出来时效果一样。细节指针和非指针区别？？
   */
-	police := Policeman{Person{"wang", "male"}, "abc"}
-	police2 := &Policeman{Person{"wang", "male"}, "abc"}  
-	police3 := NewPoliceman("zhang", "femail", "Peak")
+  police := Policeman{Person{"wang", "male"}, "abc"}
+  police2 := &Policeman{Person{"wang", "male"}, "abc"}  
+  police3 := NewPoliceman("zhang", "femail", "Peak")
 
-	fmt.Println("Hello, playground", police.name, police2.name, 			police3.name, police3)
+  fmt.Println("Hello, playground", police.name, police2.name, 			police3.name, police3)
 }
   ```
 

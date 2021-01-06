@@ -203,6 +203,3 @@ byte,short,char—> int —> long—> float —> double
 
    ![JVM Memory structure]https://raw.githubusercontent.com/e1nfalda/IAaFaJdFLzSk/ignore/uPic/8uh8SPy.png)
 
-
-
-[https://baidu.com]: 
