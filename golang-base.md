@@ -8,7 +8,7 @@
 
 ### import
 
-1. `import [_,Alias_Name] "packageName"`golang导入如果不使用会编译错误。通过`_`导入则执行`init()`,不调用也不报错。
+1. `import [_,Alias_Name] "packageName"` golang导入如果不使用会编译错误。通过`_`导入则执行`init()`,不调用也不报错。
 
 ### var
 
@@ -20,6 +20,7 @@
 1. `T(v)`
 
 ### constant
+
  `const x [TYPE] = V`
  
 作用域：A constant can only be used within its declared scope. If you redeclare a constant in an inner scope with the same name again, it’ll be a new constant that is only visible to that inner scope and it will shadow the outer scope’s constant.
@@ -101,7 +102,7 @@
     }
     ```
 ### short statment
-    `if` 或者 `switch` 等环境下赋值,作用域也在相应范围里.
+    [if](#if) 或者 [switch](#switch) 等环境下赋值,作用域也在相应范围里.
 
 ### switch
 
@@ -263,23 +264,25 @@
   type Person struct {
     ame, sex string
   }
-  type Policeman struct {
-  Person // Embeding；继承的核心
-  station string
-}
-// 生成实例方法；返回值为*Policeman， 则返回时需要&
-func NewPoliceman(name, sex, station string) *Policeman {
-  return &Policeman{Person{name, sex}, station} // struct literal
-}
-func main() {
-  /* 指针和非指针最终出来时效果一样。细节指针和非指针区别？？
-  */
-  police := Policeman{Person{"wang", "male"}, "abc"}
-  police2 := &Policeman{Person{"wang", "male"}, "abc"}  
-  police3 := NewPoliceman("zhang", "femail", "Peak")
 
-  fmt.Println("Hello, playground", police.name, police2.name, 			police3.name, police3)
-}
+  type Policeman struct {
+    Person // Embeding；继承的核心
+    station string
+  }
+  // 生成实例方法；返回值为*Policeman， 则返回时需要&
+  func NewPoliceman(name, sex, station string) *Policeman {
+    return &Policeman{Person{name, sex}, station} // struct literal
+  }
+
+  func main() {
+    /* 指针和非指针最终出来时效果一样。细节指针和非指针区别？？
+    */
+    police := Policeman{Person{"wang", "male"}, "abc"}
+    police2 := &Policeman{Person{"wang", "male"}, "abc"}  
+    police3 := NewPoliceman("zhang", "femail", "Peak")
+
+    fmt.Println("Hello, playground", police.name, police2.name, 			police3.name, police3)
+  }
   ```
 
 ### Method
@@ -290,11 +293,11 @@ func main() {
 
 1. can only declare a method with a receiver whose type is defined in the same package as the method.
 
-    eg. `type myInt int`才可以定义method。~~(p int)FooFuc(){}~~错误。
+    eg. `type myInt int` 才可以定义method。~~(p int)FooFuc(){}~~ 错误。
 
 2. **value receiver** operate on copy of value.
 
-    > 所以修改receiver的值时只能用指针类型method。
+    所以修改receiver的值时只能用指针类型method。
 
 ***method and pointer indirection(间接):***
 
@@ -302,10 +305,10 @@ func main() {
 
     ```go
     type Vertex struct {
-     x, y int
+      x, y int
     }
     func (v *Vertext) F() {
-     ...
+      ...
     }
    
     func main() {
@@ -318,7 +321,7 @@ func main() {
 
     ```go
     func (v Vertext) F() {
-     ...
+      ...
     }
     ...
     pv := &Vertex{3, 4}
@@ -334,17 +337,16 @@ func main() {
 
     > 如果赋值给interface 类型I的value没有实现该值的任何方法，则变异抛异常。
 
-- ***nil interface value***: 如果传入的value没有实现interface的method，则传入**nil**指针调用该方法。
+- ***nil interface value***: 如果传入的value没有实现interface的method，则传入nil指针调用该方法。
 
-    ```go
-    type I interface {
-      M() [ReturnType]
-    }
-    ...
-    var i I
-    i.M()  // panic
-    
-    ```
+  ```go
+  type I interface {
+    M() [ReturnType]
+  }
+  ...
+  var i I
+  i.M()  // panic
+  ```
 
 - ***interface values with nil underlying values***
 
@@ -374,8 +376,8 @@ func main() {
   ```go
   switch v := interfaceValue.(type) {
   case type1:
-  		fmt.Println(v)  // v 可以使用。
-      ...
+    fmt.Println(v)  // v 可以使用。
+    ...
   case type2:
   }
   ```
@@ -406,7 +408,7 @@ func main() {
 
   ```go
   type M struct {
-    Field int `a: ""` //unmashaled field name’s first letter should be capitalized。 
+    Field int `a: ""` // unmashaled field name’s first letter should be capitalized。 
   }
   ...
   t = reflect.TypeOf(M)
@@ -414,38 +416,33 @@ func main() {
   f.Tag.Lookup(key string) (string, bool)/f.Tag.Get(key string) string() 
   ```
 ### Goroutines
-- ***gramma:*** go f(x, y, z)
+- ***gramma:*** `go f(x, y, z)`
 
-- `sync` package provides methods  to accesses shared memory synchronized.
+- `sync` package provides methods to accesses shared memory synchronized.
 
-#### Mutex (mutual exclusion) 互斥
+**Mutex (mutual exclusion) 互斥**
 
 - `sync.Mutex.Lock`
 - `sync.Mutex.Unlock`
 
 ### channel
 
-**make (chan val-type, [buffer_size=0])**
-
-> *buffer_size* 缺省是0.当*buffer_size*使用完后线程就会堵塞至chan被读取（[buffer_size stackoverflow](https://stackoverflow.com/a/11943866)）。
-
-#### gramma
+`make (chan val-type, [buffer_size=0])`
+  `buffer_size` 缺省是0.当`buffer_size`使用完后线程就会堵塞至chan被读取（[buffer_size stackoverflow](https://stackoverflow.com/a/11943866)）
 
   ```go
-ch <- v // Send v to channel ch.
-v[, closed] := <-ch // Receive from ch, and assign value to v
-ch := make(chan int)  // create channel
-
-for v := range ch {
+  ch <- v // Send v to channel ch.
+  v[, closed] := <-ch // Receive from ch, and assign value to v
+  ch := make(chan int)  // create channel
+  
+  for v := range ch {
     ...
-}
+  }
   ```
 
+**directions:**
 
-
-#### directions
-
-用来表示只能用来接收或者发送，错误用法将编译报错**。。`<-chan` `chan<-`。
+用来表示只能用来接收或者发送，错误用法将编译报错。`<-chan`, `chan<-`
 
 - 无direction的可以转为direction的，但无法反过来
 
@@ -455,79 +452,80 @@ for v := range ch {
   >
   > （chan int)(directionCh)  // ❌
 
-#### select
+**select:**
 
-> `default`: 表示非阻塞。*Blocks util one of its cases can run.use a `default` case to try a send or receive without blocking;*
+  `default`: 表示非阻塞。*Blocks util one of its cases can run.use a `default` case to try a send or receive without blocking;*
 
-```go
-select {
+  ```go
+  select {
     case var1 <- chan1:
-    	...
+    ...
     default: // 无defalt为阻塞；有则为非阻塞。
-    	...
-}
+    ...
+  }
+  
+  ```
+**close**
 
-```
-
-#### 关闭
-
-`close(CHANNEL)`
+  `close(CHANNEL)`
 
 ### context
 
-> 并发编程中常用到一种编程模式.上下文模式.线程安全。
+  并发编程中常用到一种编程模式.上下文模式.线程安全。
 
-#### 语法
-```go
-type Context interface {
-    Done() <-chan struct{}	// 当canceled、timeout 返回 channel
-    Deadline() (deadline time.Time, ok bool) // 
-    Err() error // 返回error
-    Value(key interface{}) interface{} // 存储key-value值。
-}
-func Background() Context // 无timeout、cancelFunc，主要main、init、test、top level
+**语法:**
 
-func WithDeadline(parent Context, deadline time.Time) (Context, CancelFunc)
-func WithCancel(ctx Context, cancel CancelFunc) // type CancelFunc func()
-func WithTimeout(parent Context, timeout time.Duration) (Context, CancelFunc)
-func WithValue(parent Context, key interface{}, val interface{}) Context
-```
-#### demo
-```go
-func main() {
-    messages := make(chan int, 10)
+  ```go
+  type Context interface {
+      Done() <-chan struct{}	// 当canceled、timeout 返回 channel
+      Deadline() (deadline time.Time, ok bool) // 
+      Err() error // 返回error
+      Value(key interface{}) interface{} // 存储key-value值。
+  }
+  func Background() Context // 无timeout、cancelFunc，主要main、init、test、top level
+  
+  func WithDeadline(parent Context, deadline time.Time) (Context, CancelFunc)
+  func WithCancel(ctx Context, cancel CancelFunc) // type CancelFunc func()
+  func WithTimeout(parent Context, timeout time.Duration) (Context, CancelFunc)
+  func WithValue(parent Context, key interface{}, val interface{}) Context
+  ```
+**demo:**
 
-    // producer
-    for i := 0; i < 10; i++ {
-        messages <- i
-    }
-
-    ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
-
-    // consumer
-    go func(ctx context.Context) {
-        ticker := time.NewTicker(1 * time.Second)
-        for _ = range ticker.C {
-            select {
-            case <-ctx.Done():
-                fmt.Println("child process interrupt...")
-                return
-            default:
-                fmt.Printf("send message: %d\n", <-messages)
-            }
-        }
-    }(ctx)
-
-    defer close(messages)
-    defer cancel()
-
-    select {
-    case <-ctx.Done():
-        time.Sleep(1 * time.Second)
-        fmt.Println("main process exit!")
-    }
-}
-```
+  ```go
+  func main() {
+      messages := make(chan int, 10)
+  
+      // producer
+      for i := 0; i < 10; i++ {
+          messages <- i
+      }
+  
+      ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+  
+      // consumer
+      go func(ctx context.Context) {
+          ticker := time.NewTicker(1 * time.Second)
+          for _ = range ticker.C {
+              select {
+              case <-ctx.Done():
+                  fmt.Println("child process interrupt...")
+                  return
+              default:
+                  fmt.Printf("send message: %d\n", <-messages)
+              }
+          }
+      }(ctx)
+  
+      defer close(messages)
+      defer cancel()
+  
+      select {
+      case <-ctx.Done():
+          time.Sleep(1 * time.Second)
+          fmt.Println("main process exit!")
+      }
+  }
+  ```
 
 ### type aliase
 
@@ -535,7 +533,7 @@ func main() {
 
 os.Args,
 
- os.Open(),op.Create, os.OpenFile(), os.Close():
+os.Open(),op.Create, os.OpenFile(), os.Close():
 
 sync.WaitGroup  wg.Add, wg.Wait
 
