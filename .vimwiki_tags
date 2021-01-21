@@ -39,6 +39,7 @@ Tech	basic.md	2;"	vimwiki:basic\tbasic#redis
 Tech	database.md	2;"	vimwiki:database\tdatabase#数据库
 Tech	diary/2020-12-07.md	1;"	vimwiki:diary/2020-12-07\tdiary/2020-12-07
 Tech	diary/2020-12-07.md	2;"	vimwiki:diary/2020-12-07\tdiary/2020-12-07
+Tech	diary/2021-01-21.md	1;"	vimwiki:diary/2021-01-21\tdiary/2021-01-21
 Tech	docker.md	2;"	vimwiki:docker\tdocker#docker
 Tech	golang-advance.md	2;"	vimwiki:golang-advance\tgolang-advance#Golang 进阶
 Tech	golang-base.md	2;"	vimwiki:golang-base\tgolang-base#Golang 语法
