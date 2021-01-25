@@ -67,6 +67,7 @@ chrome	diary/2020-12-09.md	1;"	vimwiki:diary/2020-12-09\tdiary/2020-12-09
 database	database.md	2;"	vimwiki:database\tdatabase#数据库
 english	diary/2020-11-04.md	7;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04#english
 english	diary/2020-11-04.md	8;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04#english
+env	diary/2021-01-25.md	9;"	vimwiki:diary/2021-01-25\tdiary/2021-01-25#env
 find	diary/2020-11-02.md	3;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02#find
 golang	diary/2020-12-02.md	3;"	vimwiki:diary/2020-12-02\tdiary/2020-12-02#golang
 golang	golang-articles.md	3;"	vimwiki:golang-articles\tgolang-articles#Golang 学习资料
@@ -83,13 +84,16 @@ read-list	gtd-algorithm.md	32;"	vimwiki:gtd-algorithm\tgtd-algorithm#read-list
 redis	distribute.md	2;"	vimwiki:distribute\tdistribute#redis 进阶
 sed	diary/2020-11-02.md	3;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02#sed
 shell	diary/2020-11-02.md	3;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02#shell
+shell	diary/2021-01-25.md	1;"	vimwiki:diary/2021-01-25\tdiary/2021-01-25
 skill	photoshop.md	2;"	vimwiki:photoshop\tphotoshop#photoshop
+sort	diary/2021-01-25.md	1;"	vimwiki:diary/2021-01-25\tdiary/2021-01-25
 study	diary/2020-12-20.md	1;"	vimwiki:diary/2020-12-20\tdiary/2020-12-20
 todo	diary/2020-11-04.md	7;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04#todo
 todo	diary/2020-11-04.md	8;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04#todo
 tools	TaskWarrior.md	2;"	vimwiki:TaskWarrior\tTaskWarrior#TaskWarrior
 tools	diary/2020-12-07.md	2;"	vimwiki:diary/2020-12-07\tdiary/2020-12-07
 tools	network-tools.md	2;"	vimwiki:network-tools\tnetwork-tools#网络工具
+uniq	diary/2021-01-25.md	1;"	vimwiki:diary/2021-01-25\tdiary/2021-01-25
 vim	diary/2020-11-02.md	1;"	vimwiki:diary/2020-11-02\tdiary/2020-11-02
 vim	diary/2020-12-04.md	1;"	vimwiki:diary/2020-12-04\tdiary/2020-12-04
 vimwiki	vimwiki.md	1;"	vimwiki:vimwiki\tvimwiki

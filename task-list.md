@@ -15,6 +15,7 @@
 * [ ] 树  #a86ea183
     * [ ] AVL tree  #f5b1034d
     * [ ] red-black tree  #45cb833d
+    * [ ] Trie 字典树、前缀树 . ES采用该结构  #12bbf83d
 * [ ] 图  #86b8533f
 * [ ] leetcode  #bfe60b5e
 * [ ] 算法  #4223ca20
