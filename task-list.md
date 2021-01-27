@@ -12,6 +12,7 @@
 
 ## study | project:study
 * [X] 梳理常用数据结构及知识点  #885dac0e
+* [X] review Rg (2021-01-26)  #353f4a5c
 * [ ] 树  #a86ea183
     * [ ] AVL tree  #f5b1034d
     * [ ] red-black tree  #45cb833d
