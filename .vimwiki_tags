@@ -51,12 +51,14 @@ Tech	python-base.md	2;"	vimwiki:python-base\tpython-base#Python语法
 Tech	redis.md	2;"	vimwiki:redis\tredis#redis
 Tech	tree.md	2;"	vimwiki:tree\ttree#数据结构-树
 Tech	zet-280121172134-66.md	5;"	vimwiki:zet-280121172134-66\tzet-280121172134-66#Tech
+Tech	zet-290121232539-64.md	4;"	vimwiki:zet-290121232539-64\tzet-290121232539-64#Tech
 Theory	DistributSystem.md	2;"	vimwiki:DistributSystem\tDistributSystem#分布式系统
 Theory	HTTP-cache.md	2;"	vimwiki:HTTP-cache\tHTTP-cache#HTTP 缓存机制
 Theory	HTTP-versions.md	2;"	vimwiki:HTTP-versions\tHTTP-versions#HTTP 版本记录
 Theory	database.md	2;"	vimwiki:database\tdatabase#数据库
 Theory	https.md	2;"	vimwiki:https\thttps#HTTPS
 Theory	misc.md	2;"	vimwiki:misc\tmisc#HTTP 协议
+Theory	zet-290121232539-64.md	4;"	vimwiki:zet-290121232539-64\tzet-290121232539-64#Theory
 algorithm	AVL.md	3;"	vimwiki:AVL\tAVL#AVL
 algorithm	diary/2020-11-04.md	1;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04
 algorithm	tree.md	2;"	vimwiki:tree\ttree#数据结构-树
