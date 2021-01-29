@@ -10,6 +10,7 @@ Application	mysql-issues.md	2;"	vimwiki:mysql-issues\tmysql-issues#MySQL常见�
 Application	mysql-methods.md	2;"	vimwiki:mysql-methods\tmysql-methods#MySql 常用方法
 Application	redis.md	2;"	vimwiki:redis\tredis#redis
 Application	vim.md	2;"	vimwiki:vim\tvim#vim
+Application	zet-280121172134-66.md	5;"	vimwiki:zet-280121172134-66\tzet-280121172134-66#Application
 DBMS	database.md	2;"	vimwiki:database\tdatabase#数据库
 DistributeSystem	DistributSystem.md	2;"	vimwiki:DistributSystem\tDistributSystem#分布式系统
 DynamicProgramming	diary/2020-11-04.md	1;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04
@@ -49,6 +50,7 @@ Tech	nginx.md	2;"	vimwiki:nginx\tnginx#nginx
 Tech	python-base.md	2;"	vimwiki:python-base\tpython-base#Python语法
 Tech	redis.md	2;"	vimwiki:redis\tredis#redis
 Tech	tree.md	2;"	vimwiki:tree\ttree#数据结构-树
+Tech	zet-280121172134-66.md	5;"	vimwiki:zet-280121172134-66\tzet-280121172134-66#Tech
 Theory	DistributSystem.md	2;"	vimwiki:DistributSystem\tDistributSystem#分布式系统
 Theory	HTTP-cache.md	2;"	vimwiki:HTTP-cache\tHTTP-cache#HTTP 缓存机制
 Theory	HTTP-versions.md	2;"	vimwiki:HTTP-versions\tHTTP-versions#HTTP 版本记录
@@ -65,6 +67,7 @@ book	reading.md	1;"	vimwiki:reading\treading
 book-list	book-list.md	1;"	vimwiki:book-list\tbook-list
 chrome	diary/2020-12-09.md	1;"	vimwiki:diary/2020-12-09\tdiary/2020-12-09
 database	database.md	2;"	vimwiki:database\tdatabase#数据库
+docker	zet-280121172134-66.md	5;"	vimwiki:zet-280121172134-66\tzet-280121172134-66#docker
 english	diary/2020-11-04.md	7;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04#english
 english	diary/2020-11-04.md	8;"	vimwiki:diary/2020-11-04\tdiary/2020-11-04#english
 env	diary/2021-01-25.md	9;"	vimwiki:diary/2021-01-25\tdiary/2021-01-25#env

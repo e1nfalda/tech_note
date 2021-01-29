@@ -12,12 +12,12 @@
 
 
 ## Tech notes
-### Language
+* Language
 
-### Application
+* Application
 	* [docker](zet-280121172134-66.md)
 
-### Theory
+* Theory
 
 
 ## Stock
