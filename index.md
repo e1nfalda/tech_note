@@ -25,7 +25,7 @@
 	* [nginx](zet-310121122541-65.md)
 	* [zookeeper](zet-310121123430-65.md)
 	* [hadoop](zet-310121140733-71.md)
-	* MySQL
+	* [MySQL](zet-310121140846-71.md)
 
 * Theory
 	* network
