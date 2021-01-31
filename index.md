@@ -16,6 +16,8 @@
 
 * Application
 	* [docker](zet-280121172134-66.md)
+	* [redis](zet-310121121417-65.md)
+	* [nginx](zet-310121122541-65.md)
 
 * Theory
 
