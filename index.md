@@ -16,8 +16,8 @@
 * Language
 	* [Golang](zet-310121131409-66.md)
 	* [Python](zet-310121135923-71.md)
-	* Javascript/EmacScript
-	* Java
+	* [Javascript/EmacScript](zet-010221201023-75.md)
+	* [Java](zet-010221201057-75.md)
 	* [vue](zet-310121190616-70.md)
 	* [shell](zet-310121190714-70.md)
 
