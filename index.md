@@ -1,5 +1,5 @@
 # Einfalda Notes
-
+[文档规范](zet-010221164751-73.md)
 ## princpile
 	[priciples](priciples)
 
@@ -9,6 +9,7 @@
 
 ## BookList
 	[书单](zet-270121122625-66.md)
+	[articles](zet-010221001042-71.md)
 
 
 ## Tech notes
@@ -17,6 +18,8 @@
 	* [Python](zet-310121135923-71.md)
 	* Javascript/EmacScript
 	* Java
+	* [vue](zet-310121190616-70.md)
+	* [shell](zet-310121190714-70.md)
 
 * Application
 	* [git](zet-310121123614-65.md)
@@ -28,10 +31,14 @@
 	* [MySQL](zet-310121140846-71.md)
 
 * Theory
+	* IT basic concept
+	* OS
 	* network
-		* TCP/IP 
+		* [TCP/IP](zet-010221162407-73.md)
 		* HTTP
 		* network
+	* data structure
+	* algorithm
 
 
 ## Stock
