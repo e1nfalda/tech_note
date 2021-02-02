@@ -1,16 +1,14 @@
 # Einfalda Notes
-[文档规范](zet-010221164751-73.md)
+  [文档规范](zet-010221164751-73.md)
 ## princpile
-	[priciples](priciples)
+  [priciples](priciples)
 
 ## Tasks
-### today || +TODAY
-	[task list](task-list)
+  [task list](task-list)
 
 ## BookList
-	[书单](zet-270121122625-66.md)
-	[articles](zet-010221001042-71.md)
-
+	* [书单](zet-270121122625-66.md)
+	* [articles](zet-010221001042-71.md)
 
 ## Tech notes
 * Language
@@ -33,10 +31,11 @@
 * Theory
 	* IT basic concept
 	* OS
-	* network
+	* Network
+		* [Network Tools](210202-1726.md)
 		* [TCP/IP](zet-010221162407-73.md)
-		* HTTP
-		* network
+		* [HTTP](zet-020221161959-75.md)
+		* misc
 	* data structure
 	* algorithm
 
