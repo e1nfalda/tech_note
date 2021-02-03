@@ -33,7 +33,7 @@
 * Theory
 	* [Theory](210202-1736.md)
 	* OS
-	* Network
+	* [Network Summary](210203-1417.md)
 		* [Network Tools](210202-1726.md)
 		* [TCP/IP](zet-010221162407-73.md)
 		* [HTTP](zet-020221161959-75.md)
