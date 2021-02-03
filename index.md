@@ -1,16 +1,7 @@
 # Einfalda Notes
   [文档规范](zet-010221164751-73.md)
-## princpile
-  [priciples](priciples)
 
-## Tasks
-  [task list](task-list)
-
-## BookList
-	* [书单](zet-270121122625-66.md)
-	* [articles](zet-010221001042-71.md)
-
-## Tech notes
+## Toc
 * Language
 	* [Golang](zet-310121131409-66.md)
 	* [Python](zet-310121135923-71.md)
@@ -31,6 +22,8 @@
 	* [ElasticSearch](210203-1047.md)
 
 * Theory
+	* [Database](210203-2311.md)
+	* [Architect](210203-1756.md)
 	* [Theory](210202-1736.md)
 	* OS
 	* [Network Summary](210203-1417.md)
@@ -39,11 +32,9 @@
 		* [HTTP](zet-020221161959-75.md)
 		* misc
 	* Data Structure
-	* Algorithm
+		* Array
+		* List
+		* [Tree](210203-2259.md)
+		* Graph
+	* [Algorithm](210203-2257.md)
 * [unspecified](210202-1737.md)
-
-
-## Stock
-
-## Life
-	[life](life)

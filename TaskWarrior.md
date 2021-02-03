@@ -1,2 +1,0 @@
-# TaskWarrior
-<!-- :tools: -->
