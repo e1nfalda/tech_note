@@ -20,12 +20,13 @@
 	* [hadoop](zet-310121140733-71.md)
 	* [MySQL](zet-310121140846-71.md)
 	* [ElasticSearch](210203-1047.md)
+	* [Firewall](210220-1050.md)
 
 * Theory
 	* [Database](210203-2311.md)
 	* [Architect](210203-1756.md)
 	* [Theory](210202-1736.md)
-	* OS
+	* [Regular Expressions](210220-1427.md)
 	* [Network Summary](210203-1417.md)
 		* [Network Tools](210202-1726.md)
 		* [TCP/IP](zet-010221162407-73.md)
