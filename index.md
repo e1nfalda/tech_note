@@ -32,7 +32,7 @@
 		* [TCP/IP](zet-010221162407-73.md)
 		* [HTTP](zet-020221161959-75.md)
 		* [Network misc](210311-1720.md)
-	* Data Structure
+	* [Data Structure](210312-1740.md)
 		* Array
 		* List
 		* [Tree](210203-2259.md)
