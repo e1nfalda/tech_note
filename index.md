@@ -37,5 +37,6 @@
 		* List
 		* [Tree](210203-2259.md)
 		* Graph
+		* [Dynamic Programing](210328-1738.md)
 	* [Algorithm](210203-2257.md)
 * [unspecified](210202-1737.md)
