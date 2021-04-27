@@ -10,6 +10,7 @@
 	* [vue](zet-310121190616-70.md)
 	* [shell](zet-310121190714-70.md)
 	* [CSS](210202-1732.md)
+	* [Mermaid](210427-2004.md)
 
 * Application
 	* [git](zet-310121123614-65.md)
