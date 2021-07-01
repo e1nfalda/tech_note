@@ -22,9 +22,9 @@
 	* [MySQL](zet-310121140846-71.md)
 	* [ElasticSearch](210203-1047.md)
 	* [Firewall](210220-1050.md)
-	* [PKI](210531-1024.md)
 
 * Theory
+	* [PKI](210531-1024.md)
 	* [Database](210203-2311.md)
 	* [Architect](210203-1756.md)
 	* [Theory](210202-1736.md)
@@ -42,3 +42,4 @@
 		* [Dynamic Programing](210328-1738.md)
 	* [Algorithm](210203-2257.md)
 * [unspecified](210202-1737.md)
+* [terminal](210630-1813.md)
