@@ -32,7 +32,7 @@
   * [Regular Expressions](210220-1427.md)
   * [Network Summary](210203-1417.md)
     * [Network Tools](210202-1726.md)
-    * [TCP/IP](zet-010221162407-73.md)
+    * [TCP](zet-010221162407-73.md)
     * [HTTP](zet-020221161959-75.md)
     * [Network misc](210311-1720.md)
   * [Data Structure](210312-1740.md)
@@ -44,11 +44,3 @@
   * [Algorithm](210203-2257.md)
 * [unspecified](210202-1737.md)
 * [terminal](210630-1813.md)
-    
-    
-    [[
-* [bash](zet-310121190714-70# shell 命令)
-    [ GC#Golang进阶](zet-310121134725-69# GC)
-    [Golang进阶](zet-310121134725-69.md)
-    [ 响应式原理#vue](zet-310121190616-70# 响应式原理)
-    [ mysql 锁#Database](210203-2311# mysql 锁)
