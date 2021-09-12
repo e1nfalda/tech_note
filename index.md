@@ -22,7 +22,8 @@
   * [nginx](zet-310121122541-65.md)
   * [hadoop](zet-310121140733-71.md)
 
-* Theory
+* Misces
+  * [Authentication](210902-2319.md)
   * [Encode&Crypto](210802-1607.md)
   * [Firewall](210220-1050.md)
   * [PKI](210531-1024.md)
@@ -30,7 +31,7 @@
   * [Architect](210203-1756.md)
   * [Theory](210202-1736.md)
   * [Regular Expressions](210220-1427.md)
-  * [Network Summary](210203-1417.md)
+  * [Network](210203-1417.md)
     * [Network Tools](210202-1726.md)
     * [TCP](zet-010221162407-73.md)
     * [HTTP](zet-020221161959-75.md)
