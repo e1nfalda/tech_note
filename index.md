@@ -1,6 +1,33 @@
 [#](#.md) Einfalda Notes
   [文档规范](zet-010221164751-73.md)
   
+	
+Quick note
+* #vim Tips
+		`:put execute('map')`  put the output of command(like 'map') into current buffer;
+* [#GnuPG](220505-1448.md) 
+		
+#git
+cherry pick
+`git checkout master & git cherry-pick Commit1, Commt2 `
+
+
+#Golang
+# Traps
+
+1. mix short declaration and declaration may case scope error
+```go
+func main(){
+	var x int = 3 
+	if x, y := func(){return 1, 2} {
+		fmt.Printf("x: %d--y:%d", x, y) // x will print as 2
+	}
+	fmt.Println("x",  x) //  x will been print as 3
+}
+```
+		
+		
+		
 ## Toc
 * Language
   * [Golang](zet-310121131409-66.md)
